@@ -24,23 +24,42 @@ export function YearFilter({ selectedYear, onYearChange, isMobile }: YearFilterP
   }
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="grid grid-cols-1 gap-3">
       {YEARS.map((year) => (
         <button
           key={year}
           onClick={() => onYearChange(year)}
           className={`
-            w-full px-4 py-3 text-left font-bold transition-all duration-200 flex items-center justify-between
+            group relative w-full px-5 py-4 transition-all duration-300 rounded-xl border-2 flex items-center justify-between overflow-hidden
             ${
               selectedYear === year
-                ? 'bg-brand-red text-white shadow-lg shadow-brand-red/20'
-                : 'bg-gray-50 text-gray-400 hover:bg-gray-100 hover:text-gray-900 border border-gray-100'
+                ? 'bg-brand-red border-brand-red text-white shadow-xl shadow-brand-red/20 scale-[1.02]'
+                : 'bg-white border-gray-100 text-gray-400 hover:border-brand-red/30 hover:text-gray-600 hover:shadow-md'
             }
           `}
         >
-          <span>{year} Analysis</span>
+          <div className="flex flex-col items-start relative z-10">
+            <span className={`text-[10px] uppercase tracking-[0.2em] font-black ${selectedYear === year ? 'text-brand-yellow' : 'text-gray-300 group-hover:text-brand-orange'}`}>
+              Fiscal Year
+            </span>
+            <span className="text-xl font-black tracking-tight mt-0.5">{year}</span>
+          </div>
+          
+          <div className="relative z-10">
+            {selectedYear === year ? (
+              <div className="bg-white/20 p-2 rounded-lg backdrop-blur-sm">
+                <div className="w-3 h-3 bg-brand-yellow rounded-full animate-pulse"></div>
+              </div>
+            ) : (
+              <div className="w-8 h-8 rounded-full border border-gray-100 flex items-center justify-center group-hover:bg-brand-red/5 transition-colors">
+                <div className="w-1.5 h-1.5 bg-gray-200 rounded-full group-hover:bg-brand-red/30"></div>
+              </div>
+            )}
+          </div>
+
+          {/* Background Decoration */}
           {selectedYear === year && (
-            <div className="w-2 h-2 bg-brand-yellow animate-pulse"></div>
+            <div className="absolute -right-4 -bottom-4 w-24 h-24 bg-white/5 rounded-full blur-2xl"></div>
           )}
         </button>
       ))}

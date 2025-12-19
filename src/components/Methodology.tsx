@@ -7,16 +7,18 @@ interface MethodologyProps {
 export function Methodology({ isCompact }: MethodologyProps) {
   if (isCompact) {
     return (
-      <div className="bg-white p-6 border border-gray-100 shadow-2xl backdrop-blur-2xl">
+      <div className="bg-white/80 p-6 border border-gray-100 shadow-2xl backdrop-blur-xl rounded-2xl border-white/50">
         <div className="flex items-center gap-3 mb-4 text-brand-orange">
-          <Info className="w-5 h-5" />
-          <h2 className="font-bold uppercase tracking-wider text-xs">Methodology</h2>
+          <div className="p-1.5 bg-brand-orange/10 rounded-lg">
+            <Info className="w-4 h-4" />
+          </div>
+          <h2 className="font-black uppercase tracking-[0.2em] text-[10px]">Data Methodology</h2>
         </div>
-        <p className="text-xs text-gray-500 leading-relaxed mb-4">
-          Data synthesized from OECD and FAO. Trade values represent official reported figures for agricultural and food products (2021-2023).
+        <p className="text-[11px] text-gray-500 leading-relaxed mb-4 font-medium">
+          Trade intelligence synthesized from OECD and FAO datasets (2021-2023). Values represent official reported figures for agricultural products.
         </p>
         <div className="pt-4 border-t border-gray-100">
-          <p className="text-[10px] text-gray-400 italic">
+          <p className="text-[10px] text-gray-400 italic leading-snug">
             * Sugar reclassified per GBFoods standards as a primary category.
           </p>
         </div>
