@@ -119,3 +119,12 @@ export function getTotalExportValue(country: string, year: number): number {
   );
 }
 
+export function getYearlyTrend(country: string, type: 'imports' | 'exports') {
+  return YEARS.map(year => {
+    const value = type === 'imports' 
+      ? getTotalImportValue(country, year)
+      : getTotalExportValue(country, year);
+    return { year, value };
+  });
+}
+

@@ -29,9 +29,9 @@ export function ProductChart({ imports, exports, type }: ProductChartProps) {
   const CustomTooltip = ({ active, payload }: any) => {
     if (active && payload && payload.length) {
       return (
-        <div className="glass-strong rounded-lg p-4 border border-white/20">
-          <p className="text-white font-semibold mb-1">{payload[0].payload.fullName}</p>
-          <p className="text-brand-yellow text-lg font-bold">
+        <div className="bg-white p-4 border border-gray-200 shadow-xl">
+          <p className="text-gray-900 font-semibold mb-1">{payload[0].payload.fullName}</p>
+          <p className="text-brand-red text-lg font-bold">
             {formatCurrency(payload[0].value)}
           </p>
         </div>
@@ -42,8 +42,8 @@ export function ProductChart({ imports, exports, type }: ProductChartProps) {
 
   if (chartData.length === 0) {
     return (
-      <div className="glass-strong rounded-2xl p-6">
-        <h2 className="text-xl font-semibold mb-6 text-white">
+      <div className="bg-white p-6 border border-gray-100 shadow-sm">
+        <h2 className="text-xl font-semibold mb-6 text-gray-900">
           {type === 'imports' ? 'Import' : 'Export'} Products Distribution
         </h2>
         <p className="text-gray-400 text-center py-8">No data available</p>
@@ -52,8 +52,8 @@ export function ProductChart({ imports, exports, type }: ProductChartProps) {
   }
 
   return (
-    <div className="glass-strong rounded-2xl p-6">
-      <h2 className="text-xl font-semibold mb-6 text-white">
+    <div className="bg-white p-6 border border-gray-100 shadow-sm">
+      <h2 className="text-xl font-semibold mb-6 text-gray-900">
         {type === 'imports' ? 'Import' : 'Export'} Products Distribution
       </h2>
       <ResponsiveContainer width="100%" height={300}>

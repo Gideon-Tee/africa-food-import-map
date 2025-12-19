@@ -219,7 +219,7 @@ export const importsData = [
     "country": "Botswana",
     "year": 2021,
     "product": "Maize",
-    "valueUSD": 64900000.00000001,
+    "valueUSD": 64900000,
     "sourceCountry": "South Africa",
     "rank": 1
   },
@@ -411,7 +411,7 @@ export const importsData = [
     "country": "Burundi",
     "year": 2023,
     "product": "Malt",
-    "valueUSD": 8189999.999999999,
+    "valueUSD": 8189999,
     "sourceCountry": "Belguim",
     "rank": 1
   },
@@ -692,7 +692,7 @@ export const importsData = [
     "year": 2022,
     "product": "Pasta",
     "valueUSD": 12700000,
-    "sourceCountry": "Türkiye",
+    "sourceCountry": "T\u00fcrkiye",
     "rank": 3
   },
   {
@@ -716,7 +716,7 @@ export const importsData = [
     "year": 2023,
     "product": "Wheat",
     "valueUSD": 13300000,
-    "sourceCountry": "Türkiye",
+    "sourceCountry": "T\u00fcrkiye",
     "rank": 3
   },
   {
@@ -739,7 +739,7 @@ export const importsData = [
     "country": "Comoros",
     "year": 2021,
     "product": "Sugar",
-    "valueUSD": 8300000.000000001,
+    "valueUSD": 8300000,
     "sourceCountry": "Maurituis",
     "rank": 3
   },
@@ -788,7 +788,7 @@ export const importsData = [
     "year": 2023,
     "product": "Wheat and meslin flour",
     "valueUSD": 6320000,
-    "sourceCountry": "Türkiye",
+    "sourceCountry": "T\u00fcrkiye",
     "rank": 3
   },
   {
@@ -864,7 +864,7 @@ export const importsData = [
     "rank": 3
   },
   {
-    "country": "Côte d'Ivoire",
+    "country": "C\u00f4te d'Ivoire",
     "year": 2021,
     "product": "Rice",
     "valueUSD": 728000000,
@@ -872,7 +872,7 @@ export const importsData = [
     "rank": 1
   },
   {
-    "country": "Côte d'Ivoire",
+    "country": "C\u00f4te d'Ivoire",
     "year": 2021,
     "product": "Fish",
     "valueUSD": 710000000,
@@ -880,7 +880,7 @@ export const importsData = [
     "rank": 2
   },
   {
-    "country": "Côte d'Ivoire",
+    "country": "C\u00f4te d'Ivoire",
     "year": 2021,
     "product": "Wheat",
     "valueUSD": 236000000,
@@ -888,7 +888,7 @@ export const importsData = [
     "rank": 3
   },
   {
-    "country": "Côte d'Ivoire",
+    "country": "C\u00f4te d'Ivoire",
     "year": 2022,
     "product": "Rice",
     "valueUSD": 809000000,
@@ -896,7 +896,7 @@ export const importsData = [
     "rank": 1
   },
   {
-    "country": "Côte d'Ivoire",
+    "country": "C\u00f4te d'Ivoire",
     "year": 2022,
     "product": "Fish",
     "valueUSD": 772000000,
@@ -904,7 +904,7 @@ export const importsData = [
     "rank": 2
   },
   {
-    "country": "Côte d'Ivoire",
+    "country": "C\u00f4te d'Ivoire",
     "year": 2022,
     "product": "Wheat",
     "valueUSD": 314000000,
@@ -912,7 +912,7 @@ export const importsData = [
     "rank": 3
   },
   {
-    "country": "Côte d'Ivoire",
+    "country": "C\u00f4te d'Ivoire",
     "year": 2023,
     "product": "Fish",
     "valueUSD": 846000000,
@@ -920,7 +920,7 @@ export const importsData = [
     "rank": 1
   },
   {
-    "country": "Côte d'Ivoire",
+    "country": "C\u00f4te d'Ivoire",
     "year": 2023,
     "product": "Rice",
     "valueUSD": 721000000,
@@ -928,7 +928,7 @@ export const importsData = [
     "rank": 2
   },
   {
-    "country": "Côte d'Ivoire",
+    "country": "C\u00f4te d'Ivoire",
     "year": 2023,
     "product": "Wheat",
     "valueUSD": 231000000,
@@ -1268,7 +1268,7 @@ export const importsData = [
     "year": 2022,
     "product": "Seed Oils",
     "valueUSD": 12800000,
-    "sourceCountry": "Türkiye",
+    "sourceCountry": "T\u00fcrkiye",
     "rank": 3
   },
   {
@@ -2595,7 +2595,7 @@ export const importsData = [
     "country": "Namibia",
     "year": 2021,
     "product": "Sugar",
-    "valueUSD": 67099999.99999999,
+    "valueUSD": 67099999,
     "sourceCountry": "South Africa",
     "rank": 1
   },
@@ -2723,7 +2723,7 @@ export const importsData = [
     "country": "Niger",
     "year": 2023,
     "product": "Palm oil",
-    "valueUSD": 66599999.99999999,
+    "valueUSD": 66599999,
     "sourceCountry": "Indonesia",
     "rank": 2
   },
@@ -2940,7 +2940,7 @@ export const importsData = [
     "year": 2023,
     "product": "Wheat and meslin flour",
     "valueUSD": 4400000,
-    "sourceCountry": "Türkiye",
+    "sourceCountry": "T\u00fcrkiye",
     "rank": 2
   },
   {
@@ -2995,6 +2995,7 @@ export const importsData = [
     "country": "Senegal",
     "year": 2022,
     "product": "Malt Extract",
+    "valueUSD": 0,
     "sourceCountry": "Poland",
     "rank": 3
   },
