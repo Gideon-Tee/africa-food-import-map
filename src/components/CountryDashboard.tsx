@@ -1,4 +1,4 @@
-import { X, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
+import { X, TrendingUp, TrendingDown } from 'lucide-react';
 import { ImportExportPanel } from './ImportExportPanel';
 import { TradeChart } from './TradeChart';
 import { ProductChart } from './ProductChart';

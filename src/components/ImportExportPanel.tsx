@@ -189,8 +189,6 @@ export function ImportExportPanel({
         </div>
       </div>
     </div>
-      </div>
-    </div>
   );
 }
 
