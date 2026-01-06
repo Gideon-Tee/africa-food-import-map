@@ -34,7 +34,7 @@ function App() {
               <div className="flex items-center gap-3">
                 <div className="w-2.5 h-10 bg-brand-red rounded-full shadow-sm"></div>
                 <h1 className="text-4xl font-[900] tracking-tighter leading-none flex flex-col">
-                  <span className="text-brand-red">GBHub</span>
+                  <span className="text-brand-black">GBHub</span>
                   <span className="text-gray-900 -mt-2">Africa</span>
                 </h1>
               </div>
@@ -102,13 +102,13 @@ function App() {
           {/* Top Bar */}
           <header className="h-20 bg-white border-b border-gray-200 flex items-center justify-between px-8 z-20 shrink-0">
             <div className="flex items-center gap-4 lg:hidden">
-              <span className="text-xl font-black text-brand-red">GB FOODS</span>
+              <span className="text-xl font-black text-brand-black">GBHub Africa</span>
             </div>
 
 
 
-            <div className="hidden lg:flex items-center gap-6 flex-1 justify-end max-w-3xl">
-              <div className="w-80">
+            <div className="hidden md:flex items-center gap-4 lg:gap-6 flex-1 justify-end max-w-3xl">
+              <div className="w-48 md:w-64 lg:w-80 transition-all duration-300">
                 <CountrySearch
                   selectedCountry={selectedCountry}
                   onSelect={handleCountryClick}
