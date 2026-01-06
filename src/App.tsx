@@ -32,12 +32,12 @@ function App() {
               <div className="flex items-center gap-3">
                 <div className="w-2.5 h-10 bg-brand-red rounded-full shadow-sm"></div>
                 <h1 className="text-4xl font-[900] tracking-tighter leading-none flex flex-col">
-                  <span className="text-brand-red">GB</span>
-                  <span className="text-gray-900 -mt-2">FOODS</span>
+                  <span className="text-brand-red">GBHub</span>
+                  <span className="text-gray-900 -mt-2">Africa</span>
                 </h1>
               </div>
               <p className="text-[10px] uppercase tracking-[0.3em] text-gray-400 font-bold mt-3 px-1">
-                Trade Intelligence
+                Food map
               </p>
             </div>
 
@@ -75,9 +75,9 @@ function App() {
             </div>
           </div>
 
-          <div className="flex-1 p-6 overflow-y-auto flex flex-col justify-end">
+          {/* <div className="flex-1 p-6 overflow-y-auto flex flex-col justify-end">
             <div className="bg-gradient-to-br from-brand-red/5 to-transparent p-6 rounded-2xl border border-brand-red/10">
-              <p className="text-xs text-brand-red font-bold uppercase tracking-widest mb-2">System Status</p>
+              <p className="text-xs text-brand-red font-bold uppercase tracking-widest mb-2"></p>
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
                 <span className="text-sm font-bold text-gray-900">Live Data Feed</span>
@@ -92,7 +92,7 @@ function App() {
             <p className="text-[9px] text-gray-300 font-medium text-center uppercase tracking-tighter">
               © 2024 GB FOODS STRATEGY
             </p>
-          </div>
+          </div> */}
         </aside>
 
         {/* Main Content Area */}
