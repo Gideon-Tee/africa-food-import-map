@@ -3,6 +3,7 @@ import { Globe2, BarChart3, ChevronRight, LayoutDashboard } from 'lucide-react';
 import { AfricaMap } from './components/AfricaMap';
 import { CountryDashboard } from './components/features/analytics/CountryDashboard';
 import { YEARS } from './utils/dataUtils';
+import { CountrySearch } from './components/features/navigation/CountrySearch';
 
 function App() {
   const [selectedYear, setSelectedYear] = useState<number>(YEARS[YEARS.length - 1]);
@@ -103,12 +104,21 @@ function App() {
               <span className="text-xl font-black text-brand-red">GB FOODS</span>
             </div>
 
-            <div className="hidden lg:flex items-center gap-6">
+
+
+            <div className="hidden lg:flex items-center gap-6 flex-1 justify-end max-w-3xl">
+              <div className="w-80">
+                <CountrySearch
+                  selectedCountry={selectedCountry}
+                  onSelect={handleCountryClick}
+                />
+              </div>
+
               <button
                 onClick={toggleMap}
                 disabled={!selectedCountry}
                 className={`
-                  flex items-center gap-3 px-5 py-2.5 rounded-xl transition-all duration-300 font-bold text-sm border
+                  flex items-center gap-3 px-5 py-2.5 rounded-xl transition-all duration-300 font-bold text-sm border flex-shrink-0
                   ${isMapCollapsed
                     ? 'bg-white border-gray-200 text-gray-500 hover:bg-gray-50 shadow-sm'
                     : 'bg-gray-900 border-gray-900 text-white shadow-lg'}
@@ -118,11 +128,6 @@ function App() {
                 {isMapCollapsed ? <Globe2 className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
                 <span>{isMapCollapsed ? 'Show Interactive Map' : 'Focus Dashboard'}</span>
               </button>
-
-              <div className="flex items-center gap-3 px-4 py-2 bg-gray-50 rounded-lg border border-gray-100">
-                <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">Active Region</span>
-                <span className="text-sm font-black text-gray-900 uppercase">{selectedCountry || 'Pan-Africa'}</span>
-              </div>
             </div>
           </header>
 
