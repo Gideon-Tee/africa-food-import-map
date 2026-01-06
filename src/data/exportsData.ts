@@ -107,7 +107,7 @@ export const exportsData = [
     "country": "Angola",
     "year": 2022,
     "product": "Bran of wheat",
-    "valueUSD": 8199999,
+    "valueUSD": 8199999.999999999,
     "destinationCountry": "Morocco",
     "rank": 2
   },
@@ -146,7 +146,7 @@ export const exportsData = [
   {
     "country": "Benin",
     "year": 2021,
-    "product": "Cotton ",
+    "product": "Cotton",
     "valueUSD": 618000000,
     "destinationCountry": "Bangladesh",
     "rank": 1
@@ -170,7 +170,7 @@ export const exportsData = [
   {
     "country": "Benin",
     "year": 2022,
-    "product": "Cotton ",
+    "product": "Cotton",
     "valueUSD": 599000000,
     "destinationCountry": "Bangladesh",
     "rank": 1
@@ -194,7 +194,7 @@ export const exportsData = [
   {
     "country": "Benin",
     "year": 2023,
-    "product": "Cotton ",
+    "product": "Cotton",
     "valueUSD": 490000000,
     "destinationCountry": "Bangladesh",
     "rank": 1
@@ -340,7 +340,7 @@ export const exportsData = [
     "year": 2023,
     "product": "Cotton",
     "valueUSD": 262000000,
-    "destinationCountry": "C\u00f4te d'Ivoire",
+    "destinationCountry": "Côte d'Ivoire",
     "rank": 1
   },
   {
@@ -570,7 +570,7 @@ export const exportsData = [
   {
     "country": "Cameroon",
     "year": 2023,
-    "product": "Cocoa paste ",
+    "product": "Cocoa paste",
     "valueUSD": 128000000,
     "destinationCountry": "Netherlands",
     "rank": 3
@@ -771,7 +771,7 @@ export const exportsData = [
     "country": "Comoros",
     "year": 2023,
     "product": "Cloves (whole stems), raw",
-    "valueUSD": 65599999,
+    "valueUSD": 65599999.99999999,
     "destinationCountry": "Indonesia",
     "rank": 1
   },
@@ -864,7 +864,7 @@ export const exportsData = [
     "rank": 3
   },
   {
-    "country": "C\u00f4te d'Ivoire",
+    "country": "Côte d'Ivoire",
     "year": 2021,
     "product": "Cocoa beans",
     "valueUSD": 3200000000,
@@ -872,7 +872,7 @@ export const exportsData = [
     "rank": 1
   },
   {
-    "country": "C\u00f4te d'Ivoire",
+    "country": "Côte d'Ivoire",
     "year": 2021,
     "product": "Natural rubber in other forms",
     "valueUSD": 1600000000,
@@ -880,7 +880,7 @@ export const exportsData = [
     "rank": 2
   },
   {
-    "country": "C\u00f4te d'Ivoire",
+    "country": "Côte d'Ivoire",
     "year": 2021,
     "product": "Cashew nuts, in shell",
     "valueUSD": 817300000,
@@ -888,7 +888,7 @@ export const exportsData = [
     "rank": 3
   },
   {
-    "country": "C\u00f4te d'Ivoire",
+    "country": "Côte d'Ivoire",
     "year": 2022,
     "product": "Cocoa beans",
     "valueUSD": 4300000000,
@@ -896,7 +896,7 @@ export const exportsData = [
     "rank": 1
   },
   {
-    "country": "C\u00f4te d'Ivoire",
+    "country": "Côte d'Ivoire",
     "year": 2022,
     "product": "Natural rubber in other forms",
     "valueUSD": 1400000000,
@@ -904,7 +904,7 @@ export const exportsData = [
     "rank": 2
   },
   {
-    "country": "C\u00f4te d'Ivoire",
+    "country": "Côte d'Ivoire",
     "year": 2022,
     "product": "Cashew nuts, in shell",
     "valueUSD": 937100000,
@@ -912,7 +912,7 @@ export const exportsData = [
     "rank": 3
   },
   {
-    "country": "C\u00f4te d'Ivoire",
+    "country": "Côte d'Ivoire",
     "year": 2023,
     "product": "Cocoa beans",
     "valueUSD": 3300000000,
@@ -920,7 +920,7 @@ export const exportsData = [
     "rank": 1
   },
   {
-    "country": "C\u00f4te d'Ivoire",
+    "country": "Côte d'Ivoire",
     "year": 2023,
     "product": "Natural rubber in other forms",
     "valueUSD": 1700000000,
@@ -928,7 +928,7 @@ export const exportsData = [
     "rank": 2
   },
   {
-    "country": "C\u00f4te d'Ivoire",
+    "country": "Côte d'Ivoire",
     "year": 2023,
     "product": "Cashew nuts, in shell",
     "valueUSD": 1000000000,
@@ -1602,7 +1602,7 @@ export const exportsData = [
   {
     "country": "Ghana",
     "year": 2022,
-    "product": "Cocoa paste ",
+    "product": "Cocoa paste",
     "valueUSD": 481000000,
     "destinationCountry": "Netherlands",
     "rank": 3
@@ -1714,7 +1714,7 @@ export const exportsData = [
   {
     "country": "Guinea-Bissau",
     "year": 2021,
-    "product": "Fish ",
+    "product": "Fish",
     "valueUSD": 31700000,
     "destinationCountry": "Cote d'Ivoire",
     "rank": 2
@@ -1906,7 +1906,7 @@ export const exportsData = [
   {
     "country": "Lesotho",
     "year": 2023,
-    "product": "Fish ",
+    "product": "Fish",
     "valueUSD": 5050000,
     "destinationCountry": "South Africa",
     "rank": 2
@@ -2444,7 +2444,7 @@ export const exportsData = [
     "year": 2021,
     "product": "Refined sugar",
     "valueUSD": 431600000,
-    "destinationCountry": "T\u00fcrkiye",
+    "destinationCountry": "Türkiye",
     "rank": 3
   },
   {
@@ -2492,7 +2492,7 @@ export const exportsData = [
     "year": 2023,
     "product": "Refined sugar",
     "valueUSD": 403800000,
-    "destinationCountry": "T\u00fcrkiye",
+    "destinationCountry": "Türkiye",
     "rank": 3
   },
   {
@@ -2683,7 +2683,7 @@ export const exportsData = [
     "country": "Niger",
     "year": 2022,
     "product": "Cattle",
-    "valueUSD": 8300000,
+    "valueUSD": 8300000.000000001,
     "destinationCountry": "Nigeria",
     "rank": 3
   },
@@ -2859,7 +2859,7 @@ export const exportsData = [
     "country": "Sao Tome and Principe",
     "year": 2021,
     "product": "Palm oil",
-    "valueUSD": 8199999,
+    "valueUSD": 8199999.999999999,
     "destinationCountry": "Netherlands",
     "rank": 1
   },
@@ -3723,7 +3723,7 @@ export const exportsData = [
     "country": "Zambia",
     "year": 2021,
     "product": "Soybean Meal",
-    "valueUSD": 66400000,
+    "valueUSD": 66400000.00000001,
     "destinationCountry": "Tanzania",
     "rank": 1
   },

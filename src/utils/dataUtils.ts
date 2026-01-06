@@ -1,7 +1,5 @@
-// @ts-ignore - JavaScript data files
-import { importsData } from '../data/importsData.js';
-// @ts-ignore - JavaScript data files
-import { exportsData } from '../data/exportsData.js';
+import { importsData } from '../data/importsData';
+import { exportsData } from '../data/exportsData';
 
 export interface ImportData {
   country: string;
@@ -121,7 +119,7 @@ export function getTotalExportValue(country: string, year: number): number {
 
 export function getYearlyTrend(country: string, type: 'imports' | 'exports') {
   return YEARS.map(year => {
-    const value = type === 'imports' 
+    const value = type === 'imports'
       ? getTotalImportValue(country, year)
       : getTotalExportValue(country, year);
     return { year, value };
