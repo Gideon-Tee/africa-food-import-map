@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Globe2, BarChart3, ChevronLeft, ChevronRight, LayoutDashboard } from 'lucide-react';
+import { Globe2, BarChart3, ChevronRight, LayoutDashboard } from 'lucide-react';
 import { AfricaMap } from './components/AfricaMap';
 import { CountryDashboard } from './components/features/analytics/CountryDashboard';
 import { YEARS } from './utils/dataUtils';
