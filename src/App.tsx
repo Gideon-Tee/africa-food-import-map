@@ -12,6 +12,7 @@ function App() {
 
   const handleCountryClick = (country: string) => {
     setSelectedCountry(country);
+    setIsMapCollapsed(true);
   };
 
   const handleCloseDashboard = () => {
