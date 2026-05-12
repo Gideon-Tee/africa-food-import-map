@@ -5,6 +5,7 @@ import { CountryDashboard } from './components/features/analytics/CountryDashboa
 import { ComparisonDashboard } from './components/features/analytics/ComparisonDashboard';
 import { CountrySearch } from './components/features/navigation/CountrySearch';
 import { YEARS } from './utils/dataUtils';
+import gbhubLogo from './assets/GBHUB-LOGO.png';
 
 function App() {
   const [selectedYear, setSelectedYear] = useState<number>(YEARS[YEARS.length - 1]);
@@ -39,17 +40,18 @@ function App() {
         <aside className="w-80 bg-white border-r border-gray-200 hidden lg:flex flex-col flex-shrink-0 relative z-30">
           <div className="p-8 border-b border-gray-100">
             {/* Logo */}
-            <div className="flex flex-col gap-1 mb-10">
-              <div className="flex items-center gap-3">
-                <div className="w-2.5 h-10 bg-brand-red rounded-full shadow-sm" />
-                <h1 className="text-4xl font-[900] tracking-tighter leading-none flex flex-col">
-                  <span className="text-brand-red">Africa Food</span>
-                  <span className="text-gray-900 -mt-1">Import Map</span>
-                </h1>
+            <div className="flex flex-col items-start gap-3 mb-10">
+              <img
+                src={gbhubLogo}
+                alt="GBHub Africa"
+                className="w-40 object-contain"
+              />
+              <div>
+                <p className="text-[11px] uppercase tracking-[0.25em] text-gray-900 font-black leading-tight">
+                  Africa Food Import Map
+                </p>
+                <div className="mt-1 h-0.5 w-12 bg-brand-red rounded-full" />
               </div>
-              <p className="text-[10px] uppercase tracking-[0.3em] text-gray-400 font-bold mt-3 px-1">
-                Trade Intelligence
-              </p>
             </div>
 
             {/* Year selector */}
