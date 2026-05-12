@@ -103,9 +103,9 @@ export function AfricaMap({ selectedYear, selectedCountries, onCountryClick }: A
         <ZoomableGroup
           zoom={zoom}
           center={center}
-          onMoveEnd={({ zoom: z, coordinates }) => {
+          onMoveEnd={({ zoom: z, coordinates }: { zoom: number; coordinates: [number, number] }) => {
             setZoom(z);
-            setCenter(coordinates as [number, number]);
+            setCenter(coordinates);
           }}
           minZoom={MIN_ZOOM}
           maxZoom={MAX_ZOOM}
