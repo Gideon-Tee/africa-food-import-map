@@ -1,5 +1,6 @@
-import { useState, useMemo, useRef } from 'react';
-import { ComposableMap, Geographies, Geography } from 'react-simple-maps';
+import { useState, useMemo, useRef, useCallback } from 'react';
+import { ComposableMap, Geographies, Geography, ZoomableGroup } from 'react-simple-maps';
+import { Plus, Minus, RotateCcw } from 'lucide-react';
 import {
   AFRICAN_COUNTRIES,
   getTotalImportValue,
@@ -35,10 +36,18 @@ interface AfricaMapProps {
   onCountryClick: (country: string) => void;
 }
 
+type GeoObject = { id: string | number; rsmKey?: string; properties: Record<string, unknown> };
+
+const MIN_ZOOM = 1;
+const MAX_ZOOM = 8;
+const ZOOM_STEP = 1.5;
+
 export function AfricaMap({ selectedYear, selectedCountries, onCountryClick }: AfricaMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [zoom, setZoom] = useState(1);
+  const [center, setCenter] = useState<[number, number]>([22, 2]);
 
   const countryTradeData = useMemo(() => {
     const data: Record<string, { imports: number; exports: number; balance: number }> = {};
@@ -50,21 +59,24 @@ export function AfricaMap({ selectedYear, selectedCountries, onCountryClick }: A
     return data;
   }, [selectedYear]);
 
-  const getCountryFill = (name: string, isSelected: boolean): string => {
+  const getCountryFill = useCallback((name: string, isSelected: boolean, isHovered: boolean): string => {
     if (isSelected) return '#B72B18';
+    if (isHovered) return '#93c5fd';
     const d = countryTradeData[name];
     if (!d || (d.imports === 0 && d.exports === 0)) return '#D1D5DB';
     const intensity = Math.min(Math.abs(d.balance) / 5_000_000_000, 1);
     const alpha = 0.3 + intensity * 0.6;
     return d.balance >= 0 ? `rgba(250,187,37,${alpha})` : `rgba(183,43,24,${alpha})`;
-  };
+  }, [countryTradeData]);
 
   const handleMouseMove = (evt: React.MouseEvent<HTMLDivElement>) => {
     const rect = containerRef.current?.getBoundingClientRect();
-    if (rect) {
-      setMousePos({ x: evt.clientX - rect.left, y: evt.clientY - rect.top });
-    }
+    if (rect) setMousePos({ x: evt.clientX - rect.left, y: evt.clientY - rect.top });
   };
+
+  const zoomIn = () => setZoom((z) => Math.min(z * ZOOM_STEP, MAX_ZOOM));
+  const zoomOut = () => setZoom((z) => Math.max(z / ZOOM_STEP, MIN_ZOOM));
+  const resetView = () => { setZoom(1); setCenter([22, 2]); };
 
   const tooltipData = hoveredCountry ? countryTradeData[hoveredCountry] : null;
 
@@ -85,44 +97,85 @@ export function AfricaMap({ selectedYear, selectedCountries, onCountryClick }: A
 
       <ComposableMap
         projection="geoMercator"
-        projectionConfig={{ center: [22, 2], scale: 390 }}
+        projectionConfig={{ center, scale: 390 }}
         style={{ width: '100%', height: '100%' }}
       >
-        <Geographies geography={GEO_URL}>
-          {({ geographies }) =>
-            geographies
-              .filter((geo) => AFRICAN_ISO_SET.has(String(geo.id)))
-              .map((geo) => {
-                const name = ISO_TO_COUNTRY[String(geo.id)];
-                if (!name) return null;
+        <ZoomableGroup
+          zoom={zoom}
+          center={center}
+          onMoveEnd={({ zoom: z, coordinates }) => {
+            setZoom(z);
+            setCenter(coordinates as [number, number]);
+          }}
+          minZoom={MIN_ZOOM}
+          maxZoom={MAX_ZOOM}
+        >
+          <Geographies geography={GEO_URL}>
+            {({ geographies }: { geographies: GeoObject[] }) =>
+              geographies
+                .filter((geo: GeoObject) => AFRICAN_ISO_SET.has(String(geo.id)))
+                .map((geo: GeoObject) => {
+                  const name = ISO_TO_COUNTRY[String(geo.id)];
+                  if (!name) return null;
+                  const isSelected = selectedCountries.includes(name);
+                  const isHovered = hoveredCountry === name;
+                  const dimmed = selectedCountries.length > 0 && !isSelected;
 
-                const isSelected = selectedCountries.includes(name);
-                const isHovered = hoveredCountry === name;
-                const dimmed = selectedCountries.length > 0 && !isSelected;
-
-                return (
-                  <Geography
-                    key={String(geo.id)}
-                    geography={geo}
-                    fill={isHovered && !isSelected ? '#93c5fd' : getCountryFill(name, isSelected)}
-                    stroke={isSelected ? '#7f1d1d' : '#ffffff'}
-                    strokeWidth={isSelected ? 1.5 : 0.6}
-                    style={{
-                      default: { outline: 'none', opacity: dimmed ? 0.35 : 1, transition: 'opacity 0.3s, fill 0.2s' },
-                      hover: { outline: 'none', cursor: 'pointer' },
-                      pressed: { outline: 'none' },
-                    }}
-                    onClick={() => onCountryClick(name)}
-                    onMouseEnter={() => setHoveredCountry(name)}
-                    onMouseLeave={() => setHoveredCountry(null)}
-                  />
-                );
-              })
-          }
-        </Geographies>
+                  return (
+                    <Geography
+                      key={String(geo.id)}
+                      geography={geo}
+                      fill={getCountryFill(name, isSelected, isHovered)}
+                      stroke={isSelected ? '#7f1d1d' : '#ffffff'}
+                      strokeWidth={isSelected ? 1.5 / zoom : 0.6 / zoom}
+                      style={{
+                        default: {
+                          outline: 'none',
+                          opacity: dimmed ? 0.35 : 1,
+                          transition: 'opacity 0.3s, fill 0.2s',
+                        },
+                        hover: { outline: 'none', cursor: 'pointer' },
+                        pressed: { outline: 'none' },
+                      }}
+                      onClick={() => onCountryClick(name)}
+                      onMouseEnter={() => setHoveredCountry(name)}
+                      onMouseLeave={() => setHoveredCountry(null)}
+                    />
+                  );
+                })
+            }
+          </Geographies>
+        </ZoomableGroup>
       </ComposableMap>
 
-      {/* Tooltip */}
+      {/* ── Zoom Controls ── */}
+      <div className="absolute top-4 right-4 flex flex-col gap-1.5">
+        <button
+          onClick={zoomIn}
+          disabled={zoom >= MAX_ZOOM}
+          className="w-9 h-9 bg-white border border-gray-200 rounded-xl shadow-md flex items-center justify-center hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+          title="Zoom in"
+        >
+          <Plus className="w-4 h-4 text-gray-700" />
+        </button>
+        <button
+          onClick={zoomOut}
+          disabled={zoom <= MIN_ZOOM}
+          className="w-9 h-9 bg-white border border-gray-200 rounded-xl shadow-md flex items-center justify-center hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed transition-all"
+          title="Zoom out"
+        >
+          <Minus className="w-4 h-4 text-gray-700" />
+        </button>
+        <button
+          onClick={resetView}
+          className="w-9 h-9 bg-white border border-gray-200 rounded-xl shadow-md flex items-center justify-center hover:bg-gray-50 transition-all"
+          title="Reset view"
+        >
+          <RotateCcw className="w-3.5 h-3.5 text-gray-700" />
+        </button>
+      </div>
+
+      {/* ── Tooltip ── */}
       {hoveredCountry && tooltipData && (
         <div
           className="absolute pointer-events-none z-50 bg-gray-900 text-white rounded-xl shadow-2xl overflow-hidden min-w-[190px]"
@@ -157,8 +210,8 @@ export function AfricaMap({ selectedYear, selectedCountries, onCountryClick }: A
         </div>
       )}
 
-      {/* Legend */}
-      <div className="absolute bottom-5 left-5 bg-white/95 backdrop-blur-sm p-3 rounded-xl border border-gray-200 shadow-md">
+      {/* ── Legend ── */}
+      <div className="absolute bottom-5 left-4 bg-white/95 backdrop-blur-sm p-3 rounded-xl border border-gray-200 shadow-md">
         <p className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-2">Trade Balance</p>
         <div className="flex flex-col gap-1.5">
           {[
@@ -174,7 +227,14 @@ export function AfricaMap({ selectedYear, selectedCountries, onCountryClick }: A
         </div>
       </div>
 
-      {/* Selection badge */}
+      {/* ── Zoom level indicator ── */}
+      {zoom > 1 && (
+        <div className="absolute bottom-5 right-4 bg-white/90 border border-gray-200 rounded-lg px-2.5 py-1 shadow-sm">
+          <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest">{zoom.toFixed(1)}×</span>
+        </div>
+      )}
+
+      {/* ── Selection badge ── */}
       {selectedCountries.length > 0 && (
         <div className="absolute top-4 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center gap-2">
           <div className="w-1.5 h-1.5 rounded-full bg-red-500 animate-pulse" />

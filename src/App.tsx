@@ -43,12 +43,12 @@ function App() {
               <div className="flex items-center gap-3">
                 <div className="w-2.5 h-10 bg-brand-red rounded-full shadow-sm" />
                 <h1 className="text-4xl font-[900] tracking-tighter leading-none flex flex-col">
-                  <span className="text-brand-red">GBHub</span>
-                  <span className="text-gray-900 -mt-2">Africa</span>
+                  <span className="text-brand-red">Africa Food</span>
+                  <span className="text-gray-900 -mt-1">Import Map</span>
                 </h1>
               </div>
               <p className="text-[10px] uppercase tracking-[0.3em] text-gray-400 font-bold mt-3 px-1">
-                Food Trade Map
+                Trade Intelligence
               </p>
             </div>
 
@@ -86,7 +86,7 @@ function App() {
           <header className="h-20 bg-white border-b border-gray-200 flex items-center justify-between px-8 z-20 shrink-0">
             {/* Mobile logo */}
             <div className="flex items-center gap-2 lg:hidden">
-              <span className="text-xl font-black text-brand-red">GBHub Africa</span>
+              <span className="text-xl font-black text-brand-red">Africa Food Import Map</span>
             </div>
 
             {/* Desktop controls */}
@@ -163,6 +163,15 @@ function App() {
           </div>
         </main>
       </div>
+
+      {/* ── Footer ── */}
+      <footer className="fixed bottom-0 left-0 right-0 h-9 bg-gray-900 flex items-center justify-center z-50 border-t border-gray-800">
+        <p className="text-[11px] font-bold text-gray-400 tracking-wide">
+          Powered by{' '}
+          <span className="text-brand-red font-black">GBHub</span>
+          <span className="text-brand-yellow font-black"> Africa</span>
+        </p>
+      </footer>
     </div>
   );
 }
