@@ -64,7 +64,7 @@ export function CountryDashboard({ country, year, onClose }: CountryDashboardPro
                     <div className="bg-white p-6 border border-gray-100 shadow-sm rounded-2xl relative overflow-hidden group">
                         <div className="absolute top-0 left-0 w-full h-1 bg-brand-red"></div>
                         <div className="flex flex-col h-full justify-between relative z-10">
-                            <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Total Imports</span>
+                            <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Top 3 Imports</span>
                             <div>
                                 <p className="text-3xl font-[900] text-gray-900 mb-1 tracking-tight">{formatCurrency(totalImports)}</p>
                                 <div className="flex items-center gap-1.5 text-brand-red text-[10px] font-black uppercase tracking-widest">
@@ -78,7 +78,7 @@ export function CountryDashboard({ country, year, onClose }: CountryDashboardPro
                     <div className="bg-white p-6 border border-gray-100 shadow-sm rounded-2xl relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-full h-1 bg-brand-yellow"></div>
                         <div className="flex flex-col h-full justify-between relative z-10">
-                            <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Total Exports</span>
+                            <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Top 3 Exports</span>
                             <div>
                                 <p className="text-3xl font-[900] text-gray-900 mb-1 tracking-tight">{formatCurrency(totalExports)}</p>
                                 <div className="flex items-center gap-1.5 text-brand-yellow text-[10px] font-black uppercase tracking-widest">
@@ -110,7 +110,7 @@ export function CountryDashboard({ country, year, onClose }: CountryDashboardPro
                             <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-4">Trade Volume</span>
                             <div>
                                 <p className="text-3xl font-[900] text-white mb-1 tracking-tight">{formatCurrency(totalImports + totalExports)}</p>
-                                <span className="text-[10px] font-black uppercase text-brand-red tracking-widest">Aggregate USD</span>
+                                <span className="text-[10px] font-black uppercase text-brand-red tracking-widest">Top 3 Combined</span>
                             </div>
                         </div>
                     </div>
