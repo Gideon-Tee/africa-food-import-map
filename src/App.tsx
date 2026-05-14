@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Globe2, BarChart3, ChevronRight, LayoutDashboard } from 'lucide-react';
+import { Globe2, ChevronRight, LayoutDashboard } from 'lucide-react';
 import { AfricaMap } from './components/AfricaMap';
 import { CountryDashboard } from './components/features/analytics/CountryDashboard';
 import { ComparisonDashboard } from './components/features/analytics/ComparisonDashboard';
+import { AfricaOverview } from './components/features/analytics/AfricaOverview';
 import { CountrySearch } from './components/features/navigation/CountrySearch';
 import { LandingPage } from './components/LandingPage';
 import { YEARS } from './utils/dataUtils';
@@ -138,10 +139,20 @@ function App() {
 
           {/* Split Layout */}
           <div className="flex-1 flex flex-row overflow-hidden p-6 gap-6">
-            {/* Map */}
+            {/* Map — with hint overlay */}
             <div className={`${isMapCollapsed ? 'w-0 opacity-0 overflow-hidden' : 'w-full lg:w-[45%] opacity-100'}
-              h-full transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]`}>
-              <div className="w-full h-full bg-white rounded-3xl border border-gray-200 shadow-sm overflow-hidden">
+              h-full transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] relative flex flex-col gap-2`}>
+              {/* Hint banner */}
+              {!isMapCollapsed && (
+                <div className="flex-shrink-0 bg-white border border-gray-200 rounded-2xl px-4 py-2.5 flex items-center gap-2 shadow-sm">
+                  <div className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse flex-shrink-0" />
+                  <p className="text-[11px] text-gray-500 font-medium">
+                    <span className="font-black text-gray-700">Select a country</span> on the map or use the search bar.
+                    Pick multiple to compare side by side.
+                  </p>
+                </div>
+              )}
+              <div className="flex-1 bg-white rounded-3xl border border-gray-200 shadow-sm overflow-hidden min-h-0">
                 <AfricaMap
                   selectedYear={selectedYear}
                   selectedCountries={selectedCountries}
@@ -161,17 +172,7 @@ function App() {
                   onClose={handleCloseDashboard} onRemoveCountry={handleRemoveCountry}
                 />
               ) : (
-                <div className="h-full flex items-center justify-center bg-gray-50/50">
-                  <div className="text-center p-10">
-                    <div className="w-20 h-20 bg-white rounded-3xl border border-gray-100 shadow-sm flex items-center justify-center mx-auto mb-6 transform rotate-3">
-                      <BarChart3 className="w-8 h-8 text-brand-orange" />
-                    </div>
-                    <h3 className="text-2xl font-black text-gray-900 tracking-tight mb-2">Analytics Ready</h3>
-                    <p className="text-sm text-gray-500 max-w-xs mx-auto">
-                      Select countries on the map or use search to visualise trade flows. Select multiple to compare.
-                    </p>
-                  </div>
-                </div>
+                <AfricaOverview year={selectedYear} />
               )}
             </div>
           </div>
