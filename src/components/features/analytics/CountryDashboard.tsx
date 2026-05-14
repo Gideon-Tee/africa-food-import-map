@@ -23,7 +23,6 @@ export function CountryDashboard({ country, year, onClose }: CountryDashboardPro
     const exports = getExportsForCountry(country, year);
     const totalImports = getTotalImportValue(country, year);
     const totalExports = getTotalExportValue(country, year);
-    const tradeBalance = totalExports - totalImports;
     const importTrend = getYearlyTrend(country, 'imports');
     const exportTrend = getYearlyTrend(country, 'exports');
 
@@ -52,7 +51,7 @@ export function CountryDashboard({ country, year, onClose }: CountryDashboardPro
                         className="flex items-center gap-2 px-4 py-3 bg-gray-50 hover:bg-gray-100 text-gray-600 hover:text-gray-900 transition-all border border-gray-200 rounded-xl font-bold text-xs uppercase tracking-wider"
                     >
                         <ArrowLeft className="w-4 h-4" />
-                        <span>Back to Map</span>
+                        <span>Reset Map</span>
                     </button>
                 </div>
             </div>
@@ -89,28 +88,40 @@ export function CountryDashboard({ country, year, onClose }: CountryDashboardPro
                         </div>
                     </div>
 
+                    {/* Top Import Sources */}
                     <div className="bg-white p-6 border border-gray-100 shadow-sm rounded-2xl relative overflow-hidden">
                         <div className="absolute top-0 left-0 w-full h-1 bg-brand-orange"></div>
-                        <div className="flex flex-col h-full justify-between relative z-10">
-                            <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Trade Balance</span>
-                            <div>
-                                <p className={`text-3xl font-[900] mb-1 tracking-tight ${tradeBalance >= 0 ? 'text-green-600' : 'text-brand-red'}`}>
-                                    {formatCurrency(Math.abs(tradeBalance))}
-                                </p>
-                                <span className={`text-[10px] font-black uppercase tracking-widest ${tradeBalance >= 0 ? 'text-green-600/60' : 'text-brand-red/60'}`}>
-                                    {tradeBalance >= 0 ? 'SURPLUS' : 'DEFICIT'}
-                                </span>
+                        <div className="flex flex-col h-full relative z-10">
+                            <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-3">Import Sources</span>
+                            <div className="space-y-2 flex-1">
+                                {imports.length > 0 ? imports.map((item, i) => (
+                                    <div key={i} className="flex items-center justify-between gap-2">
+                                        <div className="flex items-center gap-1.5 min-w-0">
+                                            <span className="text-[9px] font-black text-gray-300 w-3">#{i + 1}</span>
+                                            <span className="text-[11px] font-bold text-gray-700 truncate">{item.sourceCountry}</span>
+                                        </div>
+                                        <span className="text-[10px] font-black text-brand-orange flex-shrink-0">{formatCurrency(item.valueUSD)}</span>
+                                    </div>
+                                )) : <p className="text-[10px] text-gray-400">No data</p>}
                             </div>
                         </div>
                     </div>
 
-                    <div className="bg-gray-900 p-6 border border-gray-800 shadow-xl rounded-2xl relative overflow-hidden group">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-brand-red"></div>
-                        <div className="flex flex-col h-full justify-between relative z-10">
-                            <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-4">Trade Volume</span>
-                            <div>
-                                <p className="text-3xl font-[900] text-white mb-1 tracking-tight">{formatCurrency(totalImports + totalExports)}</p>
-                                <span className="text-[10px] font-black uppercase text-brand-red tracking-widest">Top 3 Combined</span>
+                    {/* Top Export Destinations */}
+                    <div className="bg-gray-900 p-6 border border-gray-800 shadow-xl rounded-2xl relative overflow-hidden">
+                        <div className="absolute top-0 left-0 w-full h-1 bg-brand-yellow"></div>
+                        <div className="flex flex-col h-full relative z-10">
+                            <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-3">Export Destinations</span>
+                            <div className="space-y-2 flex-1">
+                                {exports.length > 0 ? exports.map((item, i) => (
+                                    <div key={i} className="flex items-center justify-between gap-2">
+                                        <div className="flex items-center gap-1.5 min-w-0">
+                                            <span className="text-[9px] font-black text-gray-600 w-3">#{i + 1}</span>
+                                            <span className="text-[11px] font-bold text-gray-300 truncate">{item.destinationCountry}</span>
+                                        </div>
+                                        <span className="text-[10px] font-black text-brand-yellow flex-shrink-0">{formatCurrency(item.valueUSD)}</span>
+                                    </div>
+                                )) : <p className="text-[10px] text-gray-500">No data</p>}
                             </div>
                         </div>
                     </div>
@@ -125,21 +136,62 @@ export function CountryDashboard({ country, year, onClose }: CountryDashboardPro
                         </div>
                         <TradeChart imports={imports} exports={exports} />
                     </div>
-                    <div className="space-y-6">
+
+                    {/* Import Composition — chart left, source countries right */}
+                    <div className="space-y-4">
                         <div className="flex items-center gap-4">
                             <div className="h-6 w-1 bg-brand-yellow rounded-full"></div>
                             <h3 className="text-xl font-black uppercase tracking-tighter text-gray-900">Import Composition</h3>
                         </div>
-                        <ProductChart imports={imports} exports={exports} type="imports" />
+                        <div className="flex gap-0 bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                            <div className="w-1/2 flex-shrink-0">
+                                <ProductChart imports={imports} exports={exports} type="imports" />
+                            </div>
+                            <div className="flex-1 flex flex-col justify-center gap-2.5 py-4 pr-4 pl-2">
+                                <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest">Source Countries</p>
+                                {imports.map((item, i) => (
+                                    <div key={i} className="flex flex-col gap-0.5 px-3 py-2 bg-white rounded-xl border border-gray-100 shadow-sm">
+                                        <div className="flex items-center gap-1.5">
+                                            <span className="text-[9px] font-black text-gray-300">#{i + 1}</span>
+                                            <span className="text-[10px] font-bold text-gray-700 truncate">{item.product}</span>
+                                        </div>
+                                        <div className="flex items-center gap-1">
+                                            <span className="text-[9px] text-gray-400 italic">from</span>
+                                            <span className="text-[10px] font-black text-brand-orange truncate">{item.sourceCountry}</span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div className="space-y-6">
+                {/* Export Composition — chart left, destination countries right */}
+                <div className="space-y-4">
                     <div className="flex items-center gap-4">
                         <div className="h-6 w-1 bg-brand-orange rounded-full"></div>
-                        <h3 className="text-xl font-black uppercase tracking-tighter text-gray-900">Export Breakdown</h3>
+                        <h3 className="text-xl font-black uppercase tracking-tighter text-gray-900">Export Composition</h3>
                     </div>
-                    <ProductChart imports={imports} exports={exports} type="exports" />
+                    <div className="flex gap-0 bg-gray-50 rounded-2xl border border-gray-100 overflow-hidden">
+                        <div className="w-1/2 flex-shrink-0">
+                            <ProductChart imports={imports} exports={exports} type="exports" />
+                        </div>
+                        <div className="flex-1 flex flex-col justify-center gap-2.5 py-4 pr-4 pl-2">
+                            <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest">Destination Countries</p>
+                            {exports.map((item, i) => (
+                                <div key={i} className="flex flex-col gap-0.5 px-3 py-2 bg-white rounded-xl border border-gray-100 shadow-sm">
+                                    <div className="flex items-center gap-1.5">
+                                        <span className="text-[9px] font-black text-gray-300">#{i + 1}</span>
+                                        <span className="text-[10px] font-bold text-gray-700 truncate">{item.product}</span>
+                                    </div>
+                                    <div className="flex items-center gap-1">
+                                        <span className="text-[9px] text-gray-400 italic">to</span>
+                                        <span className="text-[10px] font-black text-brand-yellow truncate">{item.destinationCountry}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </div>
 
                 {/* Trend Analysis */}

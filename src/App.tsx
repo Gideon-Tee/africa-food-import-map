@@ -182,8 +182,8 @@ function App() {
         <footer className="absolute bottom-0 left-0 right-0 h-9 bg-gray-900 flex items-center justify-center z-50 border-t border-gray-800">
           <p className="text-[11px] font-bold text-gray-400 tracking-wide">
             Powered by{' '}
-            <span className="text-brand-red font-black">GBHub</span>
-            <span className="text-brand-yellow font-black"> Africa</span>
+            <span className="text-brand-red">GBHub</span>
+            <span className="text-brand-yellow"> Africa</span>
           </p>
         </footer>
       </section>

@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import {
-  AFRICAN_COUNTRIES, YEARS,
+  AFRICAN_COUNTRIES,
   getImportsForCountry, getExportsForCountry,
   formatCurrency, getTotalImportValue, getTotalExportValue,
   type ImportData, type ExportData,
