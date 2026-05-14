@@ -4,9 +4,9 @@ import { HeroMap } from './HeroMap';
 import gbhubLogo from '../assets/GBHUB-LOGO.png';
 
 const STATS = [
-  { icon: <Globe className="w-4 h-4" />,    value: '54',    label: 'Nations' },
-  { icon: <Package className="w-4 h-4" />,   value: 'Top 3', label: 'Products' },
-  { icon: <BarChart2 className="w-4 h-4" />, value: '3 Yrs', label: 'Trade Data' },
+  { icon: <Globe className="w-4 h-4" />, value: '54', label: 'Nations' },
+  { icon: <Package className="w-4 h-4" />, value: 'Top 3', label: 'Products' },
+  { icon: <BarChart2 className="w-4 h-4" />, value: '4 Yrs', label: 'Trade Data' },
 ];
 
 export function LandingPage() {
@@ -28,7 +28,7 @@ export function LandingPage() {
         {/* Subtle blob */}
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div className="absolute rounded-full opacity-30 blur-3xl"
-            style={{ width:400,height:400,background:'radial-gradient(circle,rgba(183,43,24,0.12) 0%,transparent 70%)',top:'-10%',left:'-20%' }} />
+            style={{ width: 400, height: 400, background: 'radial-gradient(circle,rgba(183,43,24,0.12) 0%,transparent 70%)', top: '-10%', left: '-20%' }} />
         </div>
 
         {/* Main content — centred, padded away from logo */}
@@ -46,8 +46,8 @@ export function LandingPage() {
             Africa's food
             <br />trade{' '}
             <span style={{
-              background:'linear-gradient(90deg,rgb(183,43,24),rgb(237,104,67),rgb(250,187,37))',
-              WebkitBackgroundClip:'text',WebkitTextFillColor:'transparent',backgroundClip:'text',
+              background: 'linear-gradient(90deg,rgb(183,43,24),rgb(237,104,67),rgb(250,187,37))',
+              WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
             }}>
               tells a story.
             </span>
@@ -85,12 +85,12 @@ export function LandingPage() {
           <button
             onClick={scrollToDashboard}
             className="group relative flex items-center gap-3 px-7 py-3.5 rounded-xl font-black text-white text-sm shadow-lg overflow-hidden self-start"
-            style={{ background:'linear-gradient(135deg,rgb(183,43,24) 0%,rgb(237,104,67) 100%)' }}
+            style={{ background: 'linear-gradient(135deg,rgb(183,43,24) 0%,rgb(237,104,67) 100%)' }}
           >
             <span className="relative z-10">Explore the Map</span>
             <ArrowDown className="relative z-10 w-4 h-4 group-hover:translate-y-1 transition-transform duration-200" />
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-              style={{ background:'linear-gradient(135deg,rgb(237,104,67) 0%,rgb(250,187,37) 100%)' }} />
+              style={{ background: 'linear-gradient(135deg,rgb(237,104,67) 0%,rgb(250,187,37) 100%)' }} />
           </button>
 
           {/* Scroll hint */}
@@ -104,7 +104,7 @@ export function LandingPage() {
       {/* ── RIGHT PANEL — map ── */}
       <div className="hidden md:flex flex-1 relative overflow-hidden">
         <div className="absolute left-0 top-0 bottom-0 w-16 z-10 pointer-events-none"
-          style={{ background:'linear-gradient(to right,#f7f4f0,transparent)' }} />
+          style={{ background: 'linear-gradient(to right,#f7f4f0,transparent)' }} />
         <div className="absolute top-6 right-6 z-20 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-3 py-1.5 shadow-sm flex items-center gap-2">
           <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
           <span className="text-[9px] font-black text-gray-500 uppercase tracking-widest">Agricultural Commodities</span>
