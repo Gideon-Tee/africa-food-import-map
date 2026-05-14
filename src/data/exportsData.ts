@@ -72,6 +72,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Algeria",
+    "year": 2024,
+    "product": "Tropical fruits",
+    "valueUSD": 168000000,
+    "destinationCountry": "Morocco",
+    "rank": 1
+  },
+  {
+    "country": "Algeria",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 102000000,
+    "destinationCountry": "Tunisia",
+    "rank": 2
+  },
+  {
+    "country": "Algeria",
+    "year": 2024,
+    "product": "Molluscs",
+    "valueUSD": 18600000,
+    "destinationCountry": "Spain",
+    "rank": 3
+  },
+  {
     "country": "Angola",
     "year": 2021,
     "product": "Fish",
@@ -144,6 +168,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Angola",
+    "year": 2024,
+    "product": "Bran",
+    "valueUSD": 38100000,
+    "destinationCountry": "Bangladesh",
+    "rank": 1
+  },
+  {
+    "country": "Angola",
+    "year": 2024,
+    "product": "Crustaceans",
+    "valueUSD": 33900000,
+    "destinationCountry": "Spain",
+    "rank": 2
+  },
+  {
+    "country": "Angola",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 7010000,
+    "destinationCountry": "Portugal",
+    "rank": 3
+  },
+  {
     "country": "Benin",
     "year": 2021,
     "product": "Cotton",
@@ -212,6 +260,30 @@ export const exportsData = [
     "year": 2023,
     "product": "Soya beans",
     "valueUSD": 113000000,
+    "destinationCountry": "China",
+    "rank": 3
+  },
+  {
+    "country": "Benin",
+    "year": 2024,
+    "product": "Soybeans",
+    "valueUSD": 296000000,
+    "destinationCountry": "China",
+    "rank": 1
+  },
+  {
+    "country": "Benin",
+    "year": 2024,
+    "product": "Soybean Meal",
+    "valueUSD": 93900000,
+    "destinationCountry": "Pakistan",
+    "rank": 2
+  },
+  {
+    "country": "Benin",
+    "year": 2024,
+    "product": "Butter",
+    "valueUSD": 2160000,
     "destinationCountry": "China",
     "rank": 3
   },
@@ -288,6 +360,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Botswana",
+    "year": 2024,
+    "product": "Frozen Bovine Meat",
+    "valueUSD": 43600000,
+    "destinationCountry": "Greece",
+    "rank": 1
+  },
+  {
+    "country": "Botswana",
+    "year": 2024,
+    "product": "Dried legumes",
+    "valueUSD": 3000000,
+    "destinationCountry": "South Africa",
+    "rank": 2
+  },
+  {
+    "country": "Botswana",
+    "year": 2024,
+    "product": "Bran",
+    "valueUSD": 2120000,
+    "destinationCountry": "South Africa",
+    "rank": 3
+  },
+  {
     "country": "Burkina Faso",
     "year": 2021,
     "product": "Cotton",
@@ -357,6 +453,30 @@ export const exportsData = [
     "product": "Coconuts, Brazil Nuts and Cashews",
     "valueUSD": 154000000,
     "destinationCountry": "India",
+    "rank": 3
+  },
+  {
+    "country": "Burkina Faso",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 168000000,
+    "destinationCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Burkina Faso",
+    "year": 2024,
+    "product": "Other Vegetable residues",
+    "valueUSD": 13800000,
+    "destinationCountry": "Senegal",
+    "rank": 2
+  },
+  {
+    "country": "Burkina Faso",
+    "year": 2024,
+    "product": "Sheep and Goats",
+    "valueUSD": 12900000,
+    "destinationCountry": "Ghana",
     "rank": 3
   },
   {
@@ -432,6 +552,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Burundi",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 30300000,
+    "destinationCountry": "Finland",
+    "rank": 1
+  },
+  {
+    "country": "Burundi",
+    "year": 2024,
+    "product": "Animal Food",
+    "valueUSD": 69900,
+    "destinationCountry": "France",
+    "rank": 2
+  },
+  {
+    "country": "Burundi",
+    "year": 2024,
+    "product": "Dried/Salted/Smoked/Brined Fish",
+    "valueUSD": 26200,
+    "destinationCountry": "Uganda",
+    "rank": 3
+  },
+  {
     "country": "Cabo Verde",
     "year": 2021,
     "product": "Processed Fish",
@@ -501,6 +645,30 @@ export const exportsData = [
     "product": "Fish Fillets",
     "valueUSD": 5680000,
     "destinationCountry": "Spain",
+    "rank": 3
+  },
+  {
+    "country": "Cabo Verde",
+    "year": 2024,
+    "product": "Processed Fish",
+    "valueUSD": 50900000,
+    "destinationCountry": "Spain",
+    "rank": 1
+  },
+  {
+    "country": "Cabo Verde",
+    "year": 2024,
+    "product": "Molluscs",
+    "valueUSD": 536000,
+    "destinationCountry": "Spain",
+    "rank": 2
+  },
+  {
+    "country": "Cabo Verde",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 108000,
+    "destinationCountry": "United Kingdom",
     "rank": 3
   },
   {
@@ -576,6 +744,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Cameroon",
+    "year": 2024,
+    "product": "Cocoa beans",
+    "valueUSD": 1280000000,
+    "destinationCountry": "Netherlands",
+    "rank": 1
+  },
+  {
+    "country": "Cameroon",
+    "year": 2024,
+    "product": "Banana",
+    "valueUSD": 177000000,
+    "destinationCountry": "France",
+    "rank": 2
+  },
+  {
+    "country": "Cameroon",
+    "year": 2024,
+    "product": "Milk",
+    "valueUSD": 40400000,
+    "destinationCountry": "Central African Republic",
+    "rank": 3
+  },
+  {
     "country": "Central African Republic",
     "year": 2021,
     "product": "Palm oil",
@@ -645,6 +837,30 @@ export const exportsData = [
     "product": "Palm oil",
     "valueUSD": 262000,
     "destinationCountry": "Nigeria",
+    "rank": 3
+  },
+  {
+    "country": "Central African Republic",
+    "year": 2024,
+    "product": "Fruit juice",
+    "valueUSD": 213000,
+    "destinationCountry": "Lebanon",
+    "rank": 1
+  },
+  {
+    "country": "Central African Republic",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 257000,
+    "destinationCountry": "Turkey",
+    "rank": 2
+  },
+  {
+    "country": "Central African Republic",
+    "year": 2024,
+    "product": "Other Animals",
+    "valueUSD": 33600,
+    "destinationCountry": "Kuwait",
     "rank": 3
   },
   {
@@ -720,6 +936,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Chad",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 204000000,
+    "destinationCountry": "Turkey",
+    "rank": 1
+  },
+  {
+    "country": "Chad",
+    "year": 2024,
+    "product": "Other Prepared Meat",
+    "valueUSD": 222000,
+    "destinationCountry": "Slovenia",
+    "rank": 2
+  },
+  {
+    "country": "Chad",
+    "year": 2024,
+    "product": "Milk",
+    "valueUSD": 130000,
+    "destinationCountry": "Slovenia",
+    "rank": 3
+  },
+  {
     "country": "Comoros",
     "year": 2021,
     "product": "Cloves (whole stems), raw",
@@ -789,6 +1029,30 @@ export const exportsData = [
     "product": "Vanilla, raw",
     "valueUSD": 3450000,
     "destinationCountry": "United States of America",
+    "rank": 3
+  },
+  {
+    "country": "Comoros",
+    "year": 2024,
+    "product": "Cloves",
+    "valueUSD": 21700000,
+    "destinationCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Comoros",
+    "year": 2024,
+    "product": "Vanilla",
+    "valueUSD": 2370000,
+    "destinationCountry": "United States",
+    "rank": 2
+  },
+  {
+    "country": "Comoros",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 63900,
+    "destinationCountry": "France",
     "rank": 3
   },
   {
@@ -864,6 +1128,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Congo",
+    "year": 2024,
+    "product": "Cocoa beans",
+    "valueUSD": 90500000,
+    "destinationCountry": "Netherlands",
+    "rank": 1
+  },
+  {
+    "country": "Congo",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 26100000,
+    "destinationCountry": "Switzerland",
+    "rank": 2
+  },
+  {
+    "country": "Congo",
+    "year": 2024,
+    "product": "Bran",
+    "valueUSD": 5420000,
+    "destinationCountry": "Mauritania",
+    "rank": 3
+  },
+  {
     "country": "Côte d'Ivoire",
     "year": 2021,
     "product": "Cocoa beans",
@@ -933,6 +1221,30 @@ export const exportsData = [
     "product": "Cashew nuts, in shell",
     "valueUSD": 1000000000,
     "destinationCountry": "Viet Nam",
+    "rank": 3
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "year": 2024,
+    "product": "Cocoa beans",
+    "valueUSD": 4870000000,
+    "destinationCountry": "Netherlands",
+    "rank": 1
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "year": 2024,
+    "product": "Cocoa Paste",
+    "valueUSD": 2070000000,
+    "destinationCountry": "Netherlands",
+    "rank": 2
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 1250000000,
+    "destinationCountry": "Vietnam",
     "rank": 3
   },
   {
@@ -1008,6 +1320,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Democratic Republic of the Congo",
+    "year": 2024,
+    "product": "Cocoa beans",
+    "valueUSD": 357000000,
+    "destinationCountry": "Malaysia",
+    "rank": 1
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 28800000,
+    "destinationCountry": "Italy",
+    "rank": 2
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "year": 2024,
+    "product": "Bran",
+    "valueUSD": 20100000,
+    "destinationCountry": "United States",
+    "rank": 3
+  },
+  {
     "country": "Djibouti",
     "year": 2021,
     "product": "Palm oil",
@@ -1077,6 +1413,30 @@ export const exportsData = [
     "product": "Refined sugar",
     "valueUSD": 388200000,
     "destinationCountry": "Ethiopia",
+    "rank": 3
+  },
+  {
+    "country": "Djibouti",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 11500000,
+    "destinationCountry": "Netherlands",
+    "rank": 1
+  },
+  {
+    "country": "Djibouti",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 8850000,
+    "destinationCountry": "Israel",
+    "rank": 2
+  },
+  {
+    "country": "Djibouti",
+    "year": 2024,
+    "product": "Buckwheat",
+    "valueUSD": 2390000,
+    "destinationCountry": "Israel",
     "rank": 3
   },
   {
@@ -1152,6 +1512,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Egypt",
+    "year": 2024,
+    "product": "Citrus",
+    "valueUSD": 1360000000,
+    "destinationCountry": "Russia",
+    "rank": 1
+  },
+  {
+    "country": "Egypt",
+    "year": 2024,
+    "product": "Dried legumes",
+    "valueUSD": 477000000,
+    "destinationCountry": "Turkey",
+    "rank": 2
+  },
+  {
+    "country": "Egypt",
+    "year": 2024,
+    "product": "Potatoes",
+    "valueUSD": 463000000,
+    "destinationCountry": "Greece",
+    "rank": 3
+  },
+  {
     "country": "Equatorial Guinea",
     "year": 2021,
     "product": "Cocoa beans",
@@ -1206,6 +1590,30 @@ export const exportsData = [
     "valueUSD": 1350000,
     "destinationCountry": "Spain",
     "rank": 1
+  },
+  {
+    "country": "Equatorial Guinea",
+    "year": 2024,
+    "product": "Cocoa beans",
+    "valueUSD": 2050000,
+    "destinationCountry": "Spain",
+    "rank": 1
+  },
+  {
+    "country": "Equatorial Guinea",
+    "year": 2024,
+    "product": "Banana",
+    "valueUSD": 70760,
+    "destinationCountry": "Bulgaria",
+    "rank": 2
+  },
+  {
+    "country": "Equatorial Guinea",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 60760,
+    "destinationCountry": "Italy",
+    "rank": 3
   },
   {
     "country": "Eritrea",
@@ -1269,6 +1677,30 @@ export const exportsData = [
     "product": "Wheat",
     "valueUSD": 252000,
     "destinationCountry": "Madagascar",
+    "rank": 3
+  },
+  {
+    "country": "Eritrea",
+    "year": 2024,
+    "product": "Other Animals",
+    "valueUSD": 190000,
+    "destinationCountry": "Saudi Arabia",
+    "rank": 1
+  },
+  {
+    "country": "Eritrea",
+    "year": 2024,
+    "product": "Cabbages",
+    "valueUSD": 45100,
+    "destinationCountry": "Poland",
+    "rank": 2
+  },
+  {
+    "country": "Eritrea",
+    "year": 2024,
+    "product": "Other Vegetables",
+    "valueUSD": 11800,
+    "destinationCountry": "Ireland",
     "rank": 3
   },
   {
@@ -1340,6 +1772,30 @@ export const exportsData = [
     "year": 2023,
     "product": "Sugar and syrups n.e.c.",
     "valueUSD": 38700000,
+    "destinationCountry": "South Africa",
+    "rank": 3
+  },
+  {
+    "country": "Eswatini",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 342000000,
+    "destinationCountry": "South Africa",
+    "rank": 1
+  },
+  {
+    "country": "Eswatini",
+    "year": 2024,
+    "product": "Other Sugar",
+    "valueUSD": 47300000,
+    "destinationCountry": "South Africa",
+    "rank": 2
+  },
+  {
+    "country": "Eswatini",
+    "year": 2024,
+    "product": "Confectionery Sugar",
+    "valueUSD": 42900000,
     "destinationCountry": "South Africa",
     "rank": 3
   },
@@ -1416,6 +1872,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Ethiopia",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 1460000000,
+    "destinationCountry": "Saudi Arabia",
+    "rank": 1
+  },
+  {
+    "country": "Ethiopia",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 271000000,
+    "destinationCountry": "China",
+    "rank": 2
+  },
+  {
+    "country": "Ethiopia",
+    "year": 2024,
+    "product": "Dried Legumes",
+    "valueUSD": 183000000,
+    "destinationCountry": "China",
+    "rank": 3
+  },
+  {
     "country": "Gabon",
     "year": 2021,
     "product": "Palm oil",
@@ -1485,6 +1965,30 @@ export const exportsData = [
     "product": "Industrial monocarboxylic fatty acids; acid oils from refining",
     "valueUSD": 8500000,
     "destinationCountry": "Senegal",
+    "rank": 3
+  },
+  {
+    "country": "Gabon",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 100000000,
+    "destinationCountry": "Spain",
+    "rank": 1
+  },
+  {
+    "country": "Gabon",
+    "year": 2024,
+    "product": "Coconut Oil",
+    "valueUSD": 12500000,
+    "destinationCountry": "Spain",
+    "rank": 2
+  },
+  {
+    "country": "Gabon",
+    "year": 2024,
+    "product": "Bran",
+    "valueUSD": 1570000,
+    "destinationCountry": "Mauritania",
     "rank": 3
   },
   {
@@ -1560,6 +2064,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Gambia",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 29700000,
+    "destinationCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Gambia",
+    "year": 2024,
+    "product": "Groundnuts",
+    "valueUSD": 15900000,
+    "destinationCountry": "China",
+    "rank": 2
+  },
+  {
+    "country": "Gambia",
+    "year": 2024,
+    "product": "Fish Oil",
+    "valueUSD": 14300000,
+    "destinationCountry": "China",
+    "rank": 3
+  },
+  {
     "country": "Ghana",
     "year": 2021,
     "product": "Cocoa beans",
@@ -1629,6 +2157,30 @@ export const exportsData = [
     "product": "Coconuts, Brazil Nuts and Cashews",
     "valueUSD": 356000000,
     "destinationCountry": "India",
+    "rank": 3
+  },
+  {
+    "country": "Ghana",
+    "year": 2024,
+    "product": "Cocoa beans",
+    "valueUSD": 1460000000,
+    "destinationCountry": "France",
+    "rank": 1
+  },
+  {
+    "country": "Ghana",
+    "year": 2024,
+    "product": "Cocoa Paste",
+    "valueUSD": 702000000,
+    "destinationCountry": "Netherlands",
+    "rank": 2
+  },
+  {
+    "country": "Ghana",
+    "year": 2024,
+    "product": "Cocoa Butter",
+    "valueUSD": 416000000,
+    "destinationCountry": "Netherlands",
     "rank": 3
   },
   {
@@ -1704,6 +2256,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Guinea",
+    "year": 2024,
+    "product": "Cocoa beans",
+    "valueUSD": 485000000,
+    "destinationCountry": "Malaysia",
+    "rank": 1
+  },
+  {
+    "country": "Guinea",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 97000000,
+    "destinationCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "Guinea",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 31400000,
+    "destinationCountry": "Morocco",
+    "rank": 3
+  },
+  {
     "country": "Guinea-Bissau",
     "year": 2021,
     "product": "Coconuts, Brazil Nuts, and Cashews",
@@ -1773,6 +2349,30 @@ export const exportsData = [
     "product": "Fish",
     "valueUSD": 13300000,
     "destinationCountry": "Cote d'Ivoire",
+    "rank": 3
+  },
+  {
+    "country": "Guinea-Bissau",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 202000000,
+    "destinationCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Guinea-Bissau",
+    "year": 2024,
+    "product": "Frozen Fish",
+    "valueUSD": 1540000,
+    "destinationCountry": "South Korea",
+    "rank": 2
+  },
+  {
+    "country": "Guinea-Bissau",
+    "year": 2024,
+    "product": "Cocoa beans",
+    "valueUSD": 1450000,
+    "destinationCountry": "Malaysia",
     "rank": 3
   },
   {
@@ -1848,6 +2448,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Kenya",
+    "year": 2024,
+    "product": "Tea",
+    "valueUSD": 1400000000,
+    "destinationCountry": "Pakistan",
+    "rank": 1
+  },
+  {
+    "country": "Kenya",
+    "year": 2024,
+    "product": "Tropical Fruits",
+    "valueUSD": 320000000,
+    "destinationCountry": "Netherlands",
+    "rank": 2
+  },
+  {
+    "country": "Kenya",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 313000000,
+    "destinationCountry": "United States",
+    "rank": 3
+  },
+  {
     "country": "Lesotho",
     "year": 2021,
     "product": "Wheat flours",
@@ -1916,6 +2540,30 @@ export const exportsData = [
     "year": 2023,
     "product": "Water",
     "valueUSD": 4170000,
+    "destinationCountry": "South Africa",
+    "rank": 3
+  },
+  {
+    "country": "Lesotho",
+    "year": 2024,
+    "product": "Water",
+    "valueUSD": 170000000,
+    "destinationCountry": "South Africa",
+    "rank": 1
+  },
+  {
+    "country": "Lesotho",
+    "year": 2024,
+    "product": "Wheat Flours",
+    "valueUSD": 15600000,
+    "destinationCountry": "South Africa",
+    "rank": 2
+  },
+  {
+    "country": "Lesotho",
+    "year": 2024,
+    "product": "Fresh Fish",
+    "valueUSD": 4180000,
     "destinationCountry": "South Africa",
     "rank": 3
   },
@@ -1992,6 +2640,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Liberia",
+    "year": 2024,
+    "product": "Cocoa beans",
+    "valueUSD": 223000000,
+    "destinationCountry": "Malaysia",
+    "rank": 1
+  },
+  {
+    "country": "Liberia",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 81000000,
+    "destinationCountry": "Spain",
+    "rank": 2
+  },
+  {
+    "country": "Liberia",
+    "year": 2024,
+    "product": "Coconut Oil",
+    "valueUSD": 2960000,
+    "destinationCountry": "India",
+    "rank": 3
+  },
+  {
     "country": "Libya",
     "year": 2021,
     "product": "Fish",
@@ -2061,6 +2733,30 @@ export const exportsData = [
     "product": "Potatoes",
     "valueUSD": 2910000,
     "destinationCountry": "Tunisia",
+    "rank": 3
+  },
+  {
+    "country": "Libya",
+    "year": 2024,
+    "product": "Tropical fruits",
+    "valueUSD": 22700000,
+    "destinationCountry": "Morocco",
+    "rank": 1
+  },
+  {
+    "country": "Libya",
+    "year": 2024,
+    "product": "Live Fish",
+    "valueUSD": 11200000,
+    "destinationCountry": "Malta",
+    "rank": 2
+  },
+  {
+    "country": "Libya",
+    "year": 2024,
+    "product": "Fish Fillets",
+    "valueUSD": 5450000,
+    "destinationCountry": "South Korea",
     "rank": 3
   },
   {
@@ -2136,6 +2832,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Madagascar",
+    "year": 2024,
+    "product": "Vanilla",
+    "valueUSD": 273000000,
+    "destinationCountry": "France",
+    "rank": 1
+  },
+  {
+    "country": "Madagascar",
+    "year": 2024,
+    "product": "Cloves",
+    "valueUSD": 221000000,
+    "destinationCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "Madagascar",
+    "year": 2024,
+    "product": "Crustaceans",
+    "valueUSD": 93200000,
+    "destinationCountry": "France",
+    "rank": 3
+  },
+  {
     "country": "Malawi",
     "year": 2021,
     "product": "Unmanufactured tobacco",
@@ -2205,6 +2925,30 @@ export const exportsData = [
     "product": "Groundnuts",
     "valueUSD": 53800000,
     "destinationCountry": "United Republic of Tanzania",
+    "rank": 3
+  },
+  {
+    "country": "Malawi",
+    "year": 2024,
+    "product": "Dried Legumes",
+    "valueUSD": 100000000,
+    "destinationCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Malawi",
+    "year": 2024,
+    "product": "Tea",
+    "valueUSD": 73000000,
+    "destinationCountry": "United Kingdom",
+    "rank": 2
+  },
+  {
+    "country": "Malawi",
+    "year": 2024,
+    "product": "Soybean Meal",
+    "valueUSD": 36500000,
+    "destinationCountry": "Tanzania",
     "rank": 3
   },
   {
@@ -2280,6 +3024,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Mali",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 46800000,
+    "destinationCountry": "China",
+    "rank": 1
+  },
+  {
+    "country": "Mali",
+    "year": 2024,
+    "product": "Tropical Fruits",
+    "valueUSD": 11300000,
+    "destinationCountry": "Netherlands",
+    "rank": 2
+  },
+  {
+    "country": "Mali",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 5610000,
+    "destinationCountry": "China",
+    "rank": 3
+  },
+  {
     "country": "Mauritania",
     "year": 2021,
     "product": "Cotton",
@@ -2348,6 +3116,30 @@ export const exportsData = [
     "year": 2023,
     "product": "Cantaloupes and other melons",
     "valueUSD": 703000,
+    "destinationCountry": "Spain",
+    "rank": 3
+  },
+  {
+    "country": "Mauritania",
+    "year": 2024,
+    "product": "Molluscs",
+    "valueUSD": 506000000,
+    "destinationCountry": "Spain",
+    "rank": 1
+  },
+  {
+    "country": "Mauritania",
+    "year": 2024,
+    "product": "Frozen Fish",
+    "valueUSD": 489000000,
+    "destinationCountry": "Côte d'Ivoire",
+    "rank": 2
+  },
+  {
+    "country": "Mauritania",
+    "year": 2024,
+    "product": "Fresh Fish",
+    "valueUSD": 43600000,
     "destinationCountry": "Spain",
     "rank": 3
   },
@@ -2424,6 +3216,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Mauritius",
+    "year": 2024,
+    "product": "Processed Fish",
+    "valueUSD": 284000000,
+    "destinationCountry": "United Kingdom",
+    "rank": 1
+  },
+  {
+    "country": "Mauritius",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 249000000,
+    "destinationCountry": "Kenya",
+    "rank": 2
+  },
+  {
+    "country": "Mauritius",
+    "year": 2024,
+    "product": "Other Animals",
+    "valueUSD": 115000000,
+    "destinationCountry": "United States",
+    "rank": 3
+  },
+  {
     "country": "Morocco",
     "year": 2021,
     "product": "Tomatoes",
@@ -2493,6 +3309,30 @@ export const exportsData = [
     "product": "Refined sugar",
     "valueUSD": 403800000,
     "destinationCountry": "Türkiye",
+    "rank": 3
+  },
+  {
+    "country": "Morocco",
+    "year": 2024,
+    "product": "Tomatoes",
+    "valueUSD": 1500000000,
+    "destinationCountry": "France",
+    "rank": 1
+  },
+  {
+    "country": "Morocco",
+    "year": 2024,
+    "product": "Other Fruits",
+    "valueUSD": 1460000000,
+    "destinationCountry": "Spain",
+    "rank": 2
+  },
+  {
+    "country": "Morocco",
+    "year": 2024,
+    "product": "Molluscs",
+    "valueUSD": 1070000000,
+    "destinationCountry": "Spain",
     "rank": 3
   },
   {
@@ -2568,6 +3408,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Mozambique",
+    "year": 2024,
+    "product": "Dried Legumes",
+    "valueUSD": 358000000,
+    "destinationCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Mozambique",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 267000000,
+    "destinationCountry": "China",
+    "rank": 2
+  },
+  {
+    "country": "Mozambique",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 133000000,
+    "destinationCountry": "Vietnam",
+    "rank": 3
+  },
+  {
     "country": "Namibia",
     "year": 2021,
     "product": "Cattle",
@@ -2637,6 +3501,30 @@ export const exportsData = [
     "product": "Cattle",
     "valueUSD": 38700000,
     "destinationCountry": "South Africa",
+    "rank": 3
+  },
+  {
+    "country": "Namibia",
+    "year": 2024,
+    "product": "Frozen Fish",
+    "valueUSD": 378000000,
+    "destinationCountry": "Zambia",
+    "rank": 1
+  },
+  {
+    "country": "Namibia",
+    "year": 2024,
+    "product": "Fish Fillets",
+    "valueUSD": 363000000,
+    "destinationCountry": "Spain",
+    "rank": 2
+  },
+  {
+    "country": "Namibia",
+    "year": 2024,
+    "product": "Grapes",
+    "valueUSD": 116000000,
+    "destinationCountry": "United Kingdom",
     "rank": 3
   },
   {
@@ -2712,6 +3600,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Niger",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 576000000,
+    "destinationCountry": "China",
+    "rank": 1
+  },
+  {
+    "country": "Niger",
+    "year": 2024,
+    "product": "Soybeans",
+    "valueUSD": 134000000,
+    "destinationCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "Niger",
+    "year": 2024,
+    "product": "Onions",
+    "valueUSD": 10200000,
+    "destinationCountry": "Benin",
+    "rank": 3
+  },
+  {
     "country": "Nigeria",
     "year": 2021,
     "product": "Cocoa beans",
@@ -2784,6 +3696,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Nigeria",
+    "year": 2024,
+    "product": "Cocoa Beans",
+    "valueUSD": 2200000000,
+    "destinationCountry": "Netherlands",
+    "rank": 1
+  },
+  {
+    "country": "Nigeria",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 395000000,
+    "destinationCountry": "Japan",
+    "rank": 2
+  },
+  {
+    "country": "Nigeria",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 313000000,
+    "destinationCountry": "Vietnam",
+    "rank": 3
+  },
+  {
     "country": "Rwanda",
     "year": 2021,
     "product": "Tea leaves",
@@ -2852,6 +3788,30 @@ export const exportsData = [
     "year": 2023,
     "product": "Malt Extract",
     "valueUSD": 28600000,
+    "destinationCountry": "Kenya",
+    "rank": 3
+  },
+  {
+    "country": "Rwanda",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 94500000,
+    "destinationCountry": "United States",
+    "rank": 1
+  },
+  {
+    "country": "Rwanda",
+    "year": 2024,
+    "product": "Tea",
+    "valueUSD": 60000000,
+    "destinationCountry": "Pakistan",
+    "rank": 2
+  },
+  {
+    "country": "Rwanda",
+    "year": 2024,
+    "product": "Malt Extract",
+    "valueUSD": 13800000,
     "destinationCountry": "Kenya",
     "rank": 3
   },
@@ -2928,6 +3888,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Sao Tome and Principe",
+    "year": 2024,
+    "product": "Cocoa Beans",
+    "valueUSD": 21100000,
+    "destinationCountry": "Poland",
+    "rank": 1
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 6760000,
+    "destinationCountry": "Netherlands",
+    "rank": 2
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 362000,
+    "destinationCountry": "France",
+    "rank": 3
+  },
+  {
     "country": "Senegal",
     "year": 2021,
     "product": "Groundnuts",
@@ -2997,6 +3981,30 @@ export const exportsData = [
     "product": "Coconuts, Brazil Nuts, and Cashews",
     "valueUSD": 151000000,
     "destinationCountry": "India",
+    "rank": 3
+  },
+  {
+    "country": "Senegal",
+    "year": 2024,
+    "product": "Groundnuts",
+    "valueUSD": 311000000,
+    "destinationCountry": "China",
+    "rank": 1
+  },
+  {
+    "country": "Senegal",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 236000000,
+    "destinationCountry": "Côte d'Ivoire",
+    "rank": 2
+  },
+  {
+    "country": "Senegal",
+    "year": 2024,
+    "product": "Soups and Broths",
+    "valueUSD": 150000000,
+    "destinationCountry": "Mali",
     "rank": 3
   },
   {
@@ -3072,6 +4080,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Seychelles",
+    "year": 2024,
+    "product": "Frozen Fish",
+    "valueUSD": 254000000,
+    "destinationCountry": "Mauritius",
+    "rank": 1
+  },
+  {
+    "country": "Seychelles",
+    "year": 2024,
+    "product": "Processsed Fish",
+    "valueUSD": 239000000,
+    "destinationCountry": "France",
+    "rank": 2
+  },
+  {
+    "country": "Seychelles",
+    "year": 2024,
+    "product": "Fresh Fish",
+    "valueUSD": 30500000,
+    "destinationCountry": "Poland",
+    "rank": 3
+  },
+  {
     "country": "Sierra Leone",
     "year": 2021,
     "product": "Cocoa beans",
@@ -3141,6 +4173,30 @@ export const exportsData = [
     "product": "Coffee",
     "valueUSD": 3070000,
     "destinationCountry": "Switzerland",
+    "rank": 3
+  },
+  {
+    "country": "Sierra Leone",
+    "year": 2024,
+    "product": "Cocoa Beans",
+    "valueUSD": 143000000,
+    "destinationCountry": "Netherlands",
+    "rank": 1
+  },
+  {
+    "country": "Sierra Leone",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 14400000,
+    "destinationCountry": "Switzerland",
+    "rank": 2
+  },
+  {
+    "country": "Sierra Leone",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 13700000,
+    "destinationCountry": "Netherlands",
     "rank": 3
   },
   {
@@ -3216,6 +4272,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Somalia",
+    "year": 2024,
+    "product": "Sheep and Goats",
+    "valueUSD": 294000000,
+    "destinationCountry": "Saudi Arabia",
+    "rank": 1
+  },
+  {
+    "country": "Somalia",
+    "year": 2024,
+    "product": "Other Animals",
+    "valueUSD": 80700000,
+    "destinationCountry": "Saudi Arabia",
+    "rank": 2
+  },
+  {
+    "country": "Somalia",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 26700000,
+    "destinationCountry": "India",
+    "rank": 3
+  },
+  {
     "country": "South Africa",
     "year": 2021,
     "product": "Maize",
@@ -3285,6 +4365,30 @@ export const exportsData = [
     "product": "Wine",
     "valueUSD": 617900000,
     "destinationCountry": "United Kingdom of Great Britain and Northern Ireland",
+    "rank": 3
+  },
+  {
+    "country": "South Africa",
+    "year": 2024,
+    "product": "Citrus",
+    "valueUSD": 2140000000,
+    "destinationCountry": "Netherlands",
+    "rank": 1
+  },
+  {
+    "country": "South Africa",
+    "year": 2024,
+    "product": "Grapes",
+    "valueUSD": 1160000000,
+    "destinationCountry": "Netherlands",
+    "rank": 2
+  },
+  {
+    "country": "South Africa",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 939000000,
+    "destinationCountry": "Zimbabwe",
     "rank": 3
   },
   {
@@ -3360,6 +4464,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "South Sudan",
+    "year": 2024,
+    "product": "Dried/Salted/Smoked/Brined Fish",
+    "valueUSD": 4190000,
+    "destinationCountry": "Uganda",
+    "rank": 1
+  },
+  {
+    "country": "South Sudan",
+    "year": 2024,
+    "product": "Cereal Flours",
+    "valueUSD": 540000,
+    "destinationCountry": "Uganda",
+    "rank": 2
+  },
+  {
+    "country": "South Sudan",
+    "year": 2024,
+    "product": "Bovine",
+    "valueUSD": 232000,
+    "destinationCountry": "Uganda",
+    "rank": 3
+  },
+  {
     "country": "Sudan",
     "year": 2021,
     "product": "Groundnuts",
@@ -3428,6 +4556,30 @@ export const exportsData = [
     "year": 2023,
     "product": "Groundnuts",
     "valueUSD": 437000000,
+    "destinationCountry": "China",
+    "rank": 3
+  },
+  {
+    "country": "Sudan",
+    "year": 2024,
+    "product": "Sheep and Goats",
+    "valueUSD": 727000000,
+    "destinationCountry": "Saudi Arabia",
+    "rank": 1
+  },
+  {
+    "country": "Sudan",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 613000000,
+    "destinationCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "Sudan",
+    "year": 2024,
+    "product": "Groundnuts",
+    "valueUSD": 343000000,
     "destinationCountry": "China",
     "rank": 3
   },
@@ -3504,6 +4656,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Togo",
+    "year": 2024,
+    "product": "Soybeans",
+    "valueUSD": 252000000,
+    "destinationCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Togo",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 228000000,
+    "destinationCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "Togo",
+    "year": 2024,
+    "product": "Other Oily Seeds",
+    "valueUSD": 209000000,
+    "destinationCountry": "China",
+    "rank": 3
+  },
+  {
     "country": "Tunisia",
     "year": 2021,
     "product": "Olive oil",
@@ -3573,6 +4749,30 @@ export const exportsData = [
     "product": "Crustaceans",
     "valueUSD": 90800000,
     "destinationCountry": "Italy",
+    "rank": 3
+  },
+  {
+    "country": "Tunisia",
+    "year": 2024,
+    "product": "Pure Olive Oil",
+    "valueUSD": 1620000000,
+    "destinationCountry": "United States",
+    "rank": 1
+  },
+  {
+    "country": "Tunisia",
+    "year": 2024,
+    "product": "Tropical Fruits",
+    "valueUSD": 368000000,
+    "destinationCountry": "Morocco",
+    "rank": 2
+  },
+  {
+    "country": "Tunisia",
+    "year": 2024,
+    "product": "Tomatoes",
+    "valueUSD": 100000000,
+    "destinationCountry": "Netherlands",
     "rank": 3
   },
   {
@@ -3648,6 +4848,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Uganda",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 1500000000,
+    "destinationCountry": "Italy",
+    "rank": 1
+  },
+  {
+    "country": "Uganda",
+    "year": 2024,
+    "product": "Coca Beans",
+    "valueUSD": 329000000,
+    "destinationCountry": "Malaysia",
+    "rank": 2
+  },
+  {
+    "country": "Uganda",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 162000000,
+    "destinationCountry": "Rwanda",
+    "rank": 3
+  },
+  {
     "country": "United Republic of Tanzania",
     "year": 2021,
     "product": "Rice",
@@ -3716,6 +4940,30 @@ export const exportsData = [
     "year": 2023,
     "product": "Coffee",
     "valueUSD": 286000000,
+    "destinationCountry": "Italy",
+    "rank": 3
+  },
+  {
+    "country": "United Republic of Tanzania",
+    "year": 2024,
+    "product": "Coconuts, Brail Nuts and Cashews",
+    "valueUSD": 629000000,
+    "destinationCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "United Republic of Tanzania",
+    "year": 2024,
+    "product": "Dried Legumes",
+    "valueUSD": 450000000,
+    "destinationCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "United Republic of Tanzania",
+    "year": 2024,
+    "product": "Coffee",
+    "valueUSD": 319000000,
     "destinationCountry": "Italy",
     "rank": 3
   },
@@ -3792,6 +5040,30 @@ export const exportsData = [
     "rank": 3
   },
   {
+    "country": "Zambia",
+    "year": 2024,
+    "product": "Flavored Water",
+    "valueUSD": 140000000,
+    "destinationCountry": "Democratic Republic of the Congo",
+    "rank": 1
+  },
+  {
+    "country": "Zambia",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 71700000,
+    "destinationCountry": "Democratic Republic of the Congo",
+    "rank": 2
+  },
+  {
+    "country": "Zambia",
+    "year": 2024,
+    "product": "Baked Goods",
+    "valueUSD": 70300000,
+    "destinationCountry": "Democratic Republic of the Congo",
+    "rank": 3
+  },
+  {
     "country": "Zimbabwe",
     "year": 2021,
     "product": "Cotton",
@@ -3861,6 +5133,30 @@ export const exportsData = [
     "product": "Other Fruits",
     "valueUSD": 30700000,
     "destinationCountry": "Hong Kong",
+    "rank": 3
+  },
+  {
+    "country": "Zimbabwe",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 59200000,
+    "destinationCountry": "Mozambique",
+    "rank": 1
+  },
+  {
+    "country": "Zimbabwe",
+    "year": 2024,
+    "product": "Citrus",
+    "valueUSD": 50000000,
+    "destinationCountry": "Netherlands",
+    "rank": 2
+  },
+  {
+    "country": "Zimbabwe",
+    "year": 2024,
+    "product": "Other Fruits",
+    "valueUSD": 32000000,
+    "destinationCountry": "Netherlands",
     "rank": 3
   }
 ];

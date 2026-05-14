@@ -76,7 +76,7 @@ export const AFRICAN_COUNTRIES = [
   "Zimbabwe"
 ] as const;
 
-export const YEARS = [2021, 2022, 2023] as const;
+export const YEARS = [2021, 2022, 2023, 2024] as const;
 
 export function getImportsForCountry(country: string, year: number): ImportData[] {
   return importsData.filter(

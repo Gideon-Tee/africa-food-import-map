@@ -72,6 +72,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Algeria",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 1760000000,
+    "sourceCountry": "Bulgaria",
+    "rank": 1
+  },
+  {
+    "country": "Algeria",
+    "year": 2024,
+    "product": "Concentrated Milk",
+    "valueUSD": 1330000000,
+    "sourceCountry": "New Zealand",
+    "rank": 2
+  },
+  {
+    "country": "Algeria",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 1060000000,
+    "sourceCountry": "Brazil",
+    "rank": 3
+  },
+  {
     "country": "Angola",
     "year": 2021,
     "product": "Wheat",
@@ -141,6 +165,30 @@ export const importsData = [
     "product": "Rice",
     "valueUSD": 229000000,
     "sourceCountry": "United States of America",
+    "rank": 3
+  },
+  {
+    "country": "Angola",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 593000000,
+    "sourceCountry": "Poland",
+    "rank": 1
+  },
+  {
+    "country": "Angola",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 286000000,
+    "sourceCountry": "United States",
+    "rank": 2
+  },
+  {
+    "country": "Angola",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 263000000,
+    "sourceCountry": "Thailand",
     "rank": 3
   },
   {
@@ -216,6 +264,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Benin",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 989000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Benin",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 122000000,
+    "sourceCountry": "Mauritania",
+    "rank": 2
+  },
+  {
+    "country": "Benin",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 109000000,
+    "sourceCountry": "Spain",
+    "rank": 3
+  },
+  {
     "country": "Botswana",
     "year": 2021,
     "product": "Maize",
@@ -284,6 +356,30 @@ export const importsData = [
     "year": 2023,
     "product": "Maize",
     "valueUSD": 53600000,
+    "sourceCountry": "South Africa",
+    "rank": 3
+  },
+  {
+    "country": "Botswana",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 80300000,
+    "sourceCountry": "South Africa",
+    "rank": 1
+  },
+  {
+    "country": "Botswana",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 42300000,
+    "sourceCountry": "South Africa",
+    "rank": 2
+  },
+  {
+    "country": "Botswana",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 46500000,
     "sourceCountry": "South Africa",
     "rank": 3
   },
@@ -360,6 +456,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Burkina Faso",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 166000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Burkina Faso",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 119000000,
+    "sourceCountry": "Chile",
+    "rank": 2
+  },
+  {
+    "country": "Burkina Faso",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 87600000,
+    "sourceCountry": "Côte d'Ivoire",
+    "rank": 3
+  },
+  {
     "country": "Burundi",
     "year": 2021,
     "product": "Wheat",
@@ -429,6 +549,30 @@ export const importsData = [
     "product": "Sugar",
     "valueUSD": 6820000,
     "sourceCountry": "Zambia",
+    "rank": 3
+  },
+  {
+    "country": "Burundi",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 15200000,
+    "sourceCountry": "Uganda",
+    "rank": 1
+  },
+  {
+    "country": "Burundi",
+    "year": 2024,
+    "product": "Malt",
+    "valueUSD": 7580000,
+    "sourceCountry": "Belguim",
+    "rank": 2
+  },
+  {
+    "country": "Burundi",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 6820000,
+    "sourceCountry": "Poland",
     "rank": 3
   },
   {
@@ -504,6 +648,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Cabo Verde",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 21300000,
+    "sourceCountry": "Spain",
+    "rank": 1
+  },
+  {
+    "country": "Cabo Verde",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 17800000,
+    "sourceCountry": "Thailand",
+    "rank": 2
+  },
+  {
+    "country": "Cabo Verde",
+    "year": 2024,
+    "product": "Concentrated Milk",
+    "valueUSD": 15900000,
+    "sourceCountry": "Belguim",
+    "rank": 3
+  },
+  {
     "country": "Cameroon",
     "year": 2021,
     "product": "Rice",
@@ -573,6 +741,30 @@ export const importsData = [
     "product": "Fish",
     "valueUSD": 175000000,
     "sourceCountry": "Netherlands",
+    "rank": 3
+  },
+  {
+    "country": "Cameroon",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 165000000,
+    "sourceCountry": "Thailand",
+    "rank": 1
+  },
+  {
+    "country": "Cameroon",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 271000000,
+    "sourceCountry": "Brazil",
+    "rank": 2
+  },
+  {
+    "country": "Cameroon",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 256000000,
+    "sourceCountry": "Poland",
     "rank": 3
   },
   {
@@ -648,6 +840,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Central African Republic",
+    "year": 2024,
+    "product": "Milk",
+    "valueUSD": 41100000,
+    "sourceCountry": "Cameroon",
+    "rank": 1
+  },
+  {
+    "country": "Central African Republic",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 14400000,
+    "sourceCountry": "Netherlands",
+    "rank": 2
+  },
+  {
+    "country": "Central African Republic",
+    "year": 2024,
+    "product": "Soybean Meal",
+    "valueUSD": 8730000,
+    "sourceCountry": "United States",
+    "rank": 3
+  },
+  {
     "country": "Chad",
     "year": 2021,
     "product": "Rice",
@@ -717,6 +933,30 @@ export const importsData = [
     "product": "Wheat",
     "valueUSD": 13300000,
     "sourceCountry": "Türkiye",
+    "rank": 3
+  },
+  {
+    "country": "Chad",
+    "year": 2024,
+    "product": "Malt Extract",
+    "valueUSD": 34500000,
+    "sourceCountry": "Poland",
+    "rank": 1
+  },
+  {
+    "country": "Chad",
+    "year": 2024,
+    "product": "Other Edible Preparations",
+    "valueUSD": 32100000,
+    "sourceCountry": "United States",
+    "rank": 2
+  },
+  {
+    "country": "Chad",
+    "year": 2024,
+    "product": "Wheat Flours",
+    "valueUSD": 13900000,
+    "sourceCountry": "Turkey",
     "rank": 3
   },
   {
@@ -792,6 +1032,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Comoros",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 31200000,
+    "sourceCountry": "Pakistan",
+    "rank": 1
+  },
+  {
+    "country": "Comoros",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 31100000,
+    "sourceCountry": "Poland",
+    "rank": 2
+  },
+  {
+    "country": "Comoros",
+    "year": 2024,
+    "product": "Frozen Bovine Meat",
+    "valueUSD": 9710000,
+    "sourceCountry": "India",
+    "rank": 3
+  },
+  {
     "country": "Congo",
     "year": 2021,
     "product": "Chicken",
@@ -861,6 +1125,30 @@ export const importsData = [
     "product": "Wheat",
     "valueUSD": 60700000,
     "sourceCountry": "Latvia",
+    "rank": 3
+  },
+  {
+    "country": "Congo",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 179000000,
+    "sourceCountry": "Brazil",
+    "rank": 1
+  },
+  {
+    "country": "Congo",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 107000000,
+    "sourceCountry": "Indonesia",
+    "rank": 2
+  },
+  {
+    "country": "Congo",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 76200000,
+    "sourceCountry": "Thailand",
     "rank": 3
   },
   {
@@ -936,6 +1224,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Côte d'Ivoire",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 1060000000,
+    "sourceCountry": "Vietnam",
+    "rank": 1
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 910000000,
+    "sourceCountry": "Mauritania",
+    "rank": 2
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 273000000,
+    "sourceCountry": "Brazil",
+    "rank": 3
+  },
+  {
     "country": "Democratic Republic of the Congo",
     "year": 2021,
     "product": "Chicken",
@@ -1005,6 +1317,30 @@ export const importsData = [
     "product": "Flavoured Water",
     "valueUSD": 186000000,
     "sourceCountry": "Zambia",
+    "rank": 3
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 222000000,
+    "sourceCountry": "Poland",
+    "rank": 1
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "year": 2024,
+    "product": "Flavored Water",
+    "valueUSD": 198000000,
+    "sourceCountry": "Zambia",
+    "rank": 2
+  },
+  {
+    "country": "Democratic Republic of the Congo",
+    "year": 2024,
+    "product": "Cereal Meal and Pellets",
+    "valueUSD": 168000000,
+    "sourceCountry": "South Africa",
     "rank": 3
   },
   {
@@ -1080,6 +1416,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Djibouti",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 507000000,
+    "sourceCountry": "Malaysia",
+    "rank": 1
+  },
+  {
+    "country": "Djibouti",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 283000000,
+    "sourceCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "Djibouti",
+    "year": 2024,
+    "product": "Seed Oils",
+    "valueUSD": 234000000,
+    "sourceCountry": "Turkey",
+    "rank": 3
+  },
+  {
     "country": "Egypt",
     "year": 2021,
     "product": "Wheat",
@@ -1149,6 +1509,30 @@ export const importsData = [
     "product": "Palm oil",
     "valueUSD": 1200000000,
     "sourceCountry": "Indonesia",
+    "rank": 3
+  },
+  {
+    "country": "Egypt",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 5200000000,
+    "sourceCountry": "Russia",
+    "rank": 1
+  },
+  {
+    "country": "Egypt",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 1840000000,
+    "sourceCountry": "Brazil",
+    "rank": 2
+  },
+  {
+    "country": "Egypt",
+    "year": 2024,
+    "product": "Soybeans",
+    "valueUSD": 1700000000,
+    "sourceCountry": "United States",
     "rank": 3
   },
   {
@@ -1224,6 +1608,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Equatorial Guinea",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 41600000,
+    "sourceCountry": "Brazil",
+    "rank": 1
+  },
+  {
+    "country": "Equatorial Guinea",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 11000000,
+    "sourceCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "Equatorial Guinea",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 10900000,
+    "sourceCountry": "Indonesia",
+    "rank": 3
+  },
+  {
     "country": "Eritrea",
     "year": 2021,
     "product": "Wheat",
@@ -1296,6 +1704,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Eritrea",
+    "year": 2024,
+    "product": "Sorghum",
+    "valueUSD": 34700000,
+    "sourceCountry": "United States",
+    "rank": 1
+  },
+  {
+    "country": "Eritrea",
+    "year": 2024,
+    "product": "Wheat Flours",
+    "valueUSD": 21000000,
+    "sourceCountry": "Turkey",
+    "rank": 2
+  },
+  {
+    "country": "Eritrea",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 10600000,
+    "sourceCountry": "Saudi Arabia",
+    "rank": 3
+  },
+  {
     "country": "Eswatini",
     "year": 2021,
     "product": "Maize",
@@ -1364,6 +1796,30 @@ export const importsData = [
     "year": 2023,
     "product": "Flavoured Water",
     "valueUSD": 20100000,
+    "sourceCountry": "South Africa",
+    "rank": 3
+  },
+  {
+    "country": "Eswatini",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 44800000,
+    "sourceCountry": "South Africa",
+    "rank": 1
+  },
+  {
+    "country": "Eswatini",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 28300000,
+    "sourceCountry": "South Africa",
+    "rank": 2
+  },
+  {
+    "country": "Eswatini",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 21100000,
     "sourceCountry": "South Africa",
     "rank": 3
   },
@@ -1440,6 +1896,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Ethiopia",
+    "year": 2024,
+    "product": "Sorghum",
+    "valueUSD": 43000000,
+    "sourceCountry": "United States",
+    "rank": 1
+  },
+  {
+    "country": "Ethiopia",
+    "year": 2024,
+    "product": "Other Edible Preparations",
+    "valueUSD": 37900000,
+    "sourceCountry": "China",
+    "rank": 2
+  },
+  {
+    "country": "Ethiopia",
+    "year": 2024,
+    "product": "Malt Extract",
+    "valueUSD": 16900000,
+    "sourceCountry": "United States",
+    "rank": 3
+  },
+  {
     "country": "Gabon",
     "year": 2021,
     "product": "Meat of chickens, fresh or chilled",
@@ -1509,6 +1989,30 @@ export const importsData = [
     "product": "Wheat",
     "valueUSD": 44900000,
     "sourceCountry": "France",
+    "rank": 3
+  },
+  {
+    "country": "Gabon",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 104000000,
+    "sourceCountry": "Brazil",
+    "rank": 1
+  },
+  {
+    "country": "Gabon",
+    "year": 2024,
+    "product": "Malt Extract",
+    "valueUSD": 34600000,
+    "sourceCountry": "France",
+    "rank": 2
+  },
+  {
+    "country": "Gabon",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 33900000,
+    "sourceCountry": "Cambodia",
     "rank": 3
   },
   {
@@ -1584,6 +2088,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Gambia",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 137000000,
+    "sourceCountry": "Brazil",
+    "rank": 1
+  },
+  {
+    "country": "Gambia",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 87300000,
+    "sourceCountry": "Brazil",
+    "rank": 2
+  },
+  {
+    "country": "Gambia",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 81500000,
+    "sourceCountry": "Indonesia",
+    "rank": 3
+  },
+  {
     "country": "Ghana",
     "year": 2021,
     "product": "Rice",
@@ -1653,6 +2181,30 @@ export const importsData = [
     "product": "Processed cereals",
     "valueUSD": 257000000,
     "sourceCountry": "Canada",
+    "rank": 3
+  },
+  {
+    "country": "Ghana",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 373000000,
+    "sourceCountry": "Brazil",
+    "rank": 1
+  },
+  {
+    "country": "Ghana",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 289000000,
+    "sourceCountry": "China",
+    "rank": 2
+  },
+  {
+    "country": "Ghana",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 246000000,
+    "sourceCountry": "Brazil",
     "rank": 3
   },
   {
@@ -1728,6 +2280,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Guinea",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 500000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Guinea",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 195000000,
+    "sourceCountry": "Brazil",
+    "rank": 2
+  },
+  {
+    "country": "Guinea",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 133000000,
+    "sourceCountry": "Indonesia",
+    "rank": 3
+  },
+  {
     "country": "Guinea-Bissau",
     "year": 2021,
     "product": "Rice",
@@ -1797,6 +2373,30 @@ export const importsData = [
     "product": "Meat of chickens, fresh or chilled",
     "valueUSD": 5400000,
     "sourceCountry": "United States of America",
+    "rank": 3
+  },
+  {
+    "country": "Guinea-Bissau",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 77600000,
+    "sourceCountry": "Pakistan",
+    "rank": 1
+  },
+  {
+    "country": "Guinea-Bissau",
+    "year": 2024,
+    "product": "Flavored Water",
+    "valueUSD": 16400000,
+    "sourceCountry": "Portugal",
+    "rank": 2
+  },
+  {
+    "country": "Guinea-Bissau",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 13200000,
+    "sourceCountry": "Netherlands",
     "rank": 3
   },
   {
@@ -1872,6 +2472,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Kenya",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 987000000,
+    "sourceCountry": "Malaysia",
+    "rank": 1
+  },
+  {
+    "country": "Kenya",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 625000000,
+    "sourceCountry": "Russia",
+    "rank": 2
+  },
+  {
+    "country": "Kenya",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 494000000,
+    "sourceCountry": "Pakistan",
+    "rank": 3
+  },
+  {
     "country": "Lesotho",
     "year": 2021,
     "product": "Flour of cereals n.e.c",
@@ -1940,6 +2564,30 @@ export const importsData = [
     "year": 2023,
     "product": "Maize",
     "valueUSD": 20400000,
+    "sourceCountry": "South Africa",
+    "rank": 3
+  },
+  {
+    "country": "Lesotho",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 33300000,
+    "sourceCountry": "South Africa",
+    "rank": 1
+  },
+  {
+    "country": "Lesotho",
+    "year": 2024,
+    "product": "Cereal Flours",
+    "valueUSD": 32600000,
+    "sourceCountry": "South Africa",
+    "rank": 2
+  },
+  {
+    "country": "Lesotho",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 32100000,
     "sourceCountry": "South Africa",
     "rank": 3
   },
@@ -2016,6 +2664,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Liberia",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 147000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Liberia",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 48500000,
+    "sourceCountry": "Poland",
+    "rank": 2
+  },
+  {
+    "country": "Liberia",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 40800000,
+    "sourceCountry": "Indonesia",
+    "rank": 3
+  },
+  {
     "country": "Libya",
     "year": 2021,
     "product": "Wheat",
@@ -2085,6 +2757,30 @@ export const importsData = [
     "product": "Cheese",
     "valueUSD": 172000000,
     "sourceCountry": "Netherlands",
+    "rank": 3
+  },
+  {
+    "country": "Libya",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 513000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Libya",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 219000000,
+    "sourceCountry": "Brazil",
+    "rank": 2
+  },
+  {
+    "country": "Libya",
+    "year": 2024,
+    "product": "Concentrated Milk",
+    "valueUSD": 179000000,
+    "sourceCountry": "New Zealand",
     "rank": 3
   },
   {
@@ -2160,6 +2856,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Madagascar",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 152000000,
+    "sourceCountry": "Pakistan",
+    "rank": 1
+  },
+  {
+    "country": "Madagascar",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 135000000,
+    "sourceCountry": "Malaysia",
+    "rank": 2
+  },
+  {
+    "country": "Madagascar",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 129000000,
+    "sourceCountry": "Brazil",
+    "rank": 3
+  },
+  {
     "country": "Malawi",
     "year": 2021,
     "product": "Wheat",
@@ -2229,6 +2949,30 @@ export const importsData = [
     "product": "Maize",
     "valueUSD": 14200000,
     "sourceCountry": "Mozmbique",
+    "rank": 3
+  },
+  {
+    "country": "Malawi",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 63000000,
+    "sourceCountry": "Malaysia",
+    "rank": 1
+  },
+  {
+    "country": "Malawi",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 37800000,
+    "sourceCountry": "Russia",
+    "rank": 2
+  },
+  {
+    "country": "Malawi",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 29700000,
+    "sourceCountry": "Tanzania",
     "rank": 3
   },
   {
@@ -2304,6 +3048,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Mali",
+    "year": 2024,
+    "product": "Malt Extract",
+    "valueUSD": 123000000,
+    "sourceCountry": "Ireland",
+    "rank": 1
+  },
+  {
+    "country": "Mali",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 88900000,
+    "sourceCountry": "Mauritania",
+    "rank": 2
+  },
+  {
+    "country": "Mali",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 84000000,
+    "sourceCountry": "Côte d'Ivoire",
+    "rank": 3
+  },
+  {
     "country": "Mauritania",
     "year": 2021,
     "product": "Wheat",
@@ -2376,6 +3144,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Mauritania",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 283000000,
+    "sourceCountry": "Brazil",
+    "rank": 1
+  },
+  {
+    "country": "Mauritania",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 228000000,
+    "sourceCountry": "France",
+    "rank": 2
+  },
+  {
+    "country": "Mauritania",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 155000000,
+    "sourceCountry": "Malaysia",
+    "rank": 3
+  },
+  {
     "country": "Mauritius",
     "year": 2021,
     "product": "Fish",
@@ -2444,6 +3236,30 @@ export const importsData = [
     "year": 2023,
     "product": "Concentrated Milk",
     "valueUSD": 65200000,
+    "sourceCountry": "New Zealand",
+    "rank": 3
+  },
+  {
+    "country": "Mauritius",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 224000000,
+    "sourceCountry": "Seychelles",
+    "rank": 1
+  },
+  {
+    "country": "Mauritius",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 67200000,
+    "sourceCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "Mauritius",
+    "year": 2024,
+    "product": "Concentrated Milk",
+    "valueUSD": 66800000,
     "sourceCountry": "New Zealand",
     "rank": 3
   },
@@ -2520,6 +3336,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Morocco",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 1660000000,
+    "sourceCountry": "France",
+    "rank": 1
+  },
+  {
+    "country": "Morocco",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 960000000,
+    "sourceCountry": "Brazil",
+    "rank": 2
+  },
+  {
+    "country": "Morocco",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 605000000,
+    "sourceCountry": "Brazil",
+    "rank": 3
+  },
+  {
     "country": "Mozambique",
     "year": 2021,
     "product": "Palm oil",
@@ -2589,6 +3429,30 @@ export const importsData = [
     "product": "Wheat",
     "valueUSD": 294000000,
     "sourceCountry": "Malaysia",
+    "rank": 3
+  },
+  {
+    "country": "Mozambique",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 481000000,
+    "sourceCountry": "Thailand",
+    "rank": 1
+  },
+  {
+    "country": "Mozambique",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 384000000,
+    "sourceCountry": "Malaysia",
+    "rank": 2
+  },
+  {
+    "country": "Mozambique",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 252000000,
+    "sourceCountry": "Russia",
     "rank": 3
   },
   {
@@ -2664,6 +3528,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Namibia",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 96900000,
+    "sourceCountry": "South Africa",
+    "rank": 1
+  },
+  {
+    "country": "Namibia",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 87500000,
+    "sourceCountry": "South Africa",
+    "rank": 2
+  },
+  {
+    "country": "Namibia",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 51200000,
+    "sourceCountry": "Latvia",
+    "rank": 3
+  },
+  {
     "country": "Niger",
     "year": 2021,
     "product": "Rice",
@@ -2733,6 +3621,30 @@ export const importsData = [
     "product": "Pasta",
     "valueUSD": 38400000,
     "sourceCountry": "Turkey",
+    "rank": 3
+  },
+  {
+    "country": "Niger",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 245000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Niger",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 70200000,
+    "sourceCountry": "Togo",
+    "rank": 2
+  },
+  {
+    "country": "Niger",
+    "year": 2024,
+    "product": "Other Edible Preparations",
+    "valueUSD": 43900000,
+    "sourceCountry": "United States",
     "rank": 3
   },
   {
@@ -2808,6 +3720,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Nigeria",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 2100000000,
+    "sourceCountry": "Lithuania",
+    "rank": 1
+  },
+  {
+    "country": "Nigeria",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 720000000,
+    "sourceCountry": "Brazil",
+    "rank": 2
+  },
+  {
+    "country": "Nigeria",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 674000000,
+    "sourceCountry": "Netherlands",
+    "rank": 3
+  },
+  {
     "country": "Rwanda",
     "year": 2021,
     "product": "Sugar",
@@ -2880,6 +3816,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Rwanda",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 84900000,
+    "sourceCountry": "China",
+    "rank": 1
+  },
+  {
+    "country": "Rwanda",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 70800000,
+    "sourceCountry": "Uganda",
+    "rank": 2
+  },
+  {
+    "country": "Rwanda",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 30900000,
+    "sourceCountry": "Tanzania",
+    "rank": 3
+  },
+  {
     "country": "Sao Tome and Principe",
     "year": 2021,
     "product": "Rice",
@@ -2948,6 +3908,30 @@ export const importsData = [
     "year": 2023,
     "product": "Wine",
     "valueUSD": 3900000,
+    "sourceCountry": "Portugal",
+    "rank": 3
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 4310000,
+    "sourceCountry": "Thailand",
+    "rank": 1
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 4030000,
+    "sourceCountry": "United Kingdom",
+    "rank": 2
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "year": 2024,
+    "product": "Wheat Flours",
+    "valueUSD": 3780000,
     "sourceCountry": "Portugal",
     "rank": 3
   },
@@ -3024,6 +4008,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Senegal",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 712000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Senegal",
+    "year": 2024,
+    "product": "Malt Extract",
+    "valueUSD": 309000000,
+    "sourceCountry": "Poland",
+    "rank": 2
+  },
+  {
+    "country": "Senegal",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 269000000,
+    "sourceCountry": "France",
+    "rank": 3
+  },
+  {
     "country": "Seychelles",
     "year": 2021,
     "product": "Fish",
@@ -3093,6 +4101,30 @@ export const importsData = [
     "product": "Meat of chickens, fresh or chilled",
     "valueUSD": 9460000,
     "sourceCountry": "Brazil",
+    "rank": 3
+  },
+  {
+    "country": "Seychelles",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 96600000,
+    "sourceCountry": "France",
+    "rank": 1
+  },
+  {
+    "country": "Seychelles",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 11400000,
+    "sourceCountry": "Brazil",
+    "rank": 2
+  },
+  {
+    "country": "Seychelles",
+    "year": 2024,
+    "product": "Cheese",
+    "valueUSD": 9470000,
+    "sourceCountry": "United Arab Emirates",
     "rank": 3
   },
   {
@@ -3168,6 +4200,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Sierra Leone",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 235000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Sierra Leone",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 33700000,
+    "sourceCountry": "Morocco",
+    "rank": 2
+  },
+  {
+    "country": "Sierra Leone",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 32700000,
+    "sourceCountry": "United States",
+    "rank": 3
+  },
+  {
     "country": "Somalia",
     "year": 2021,
     "product": "Sugar",
@@ -3237,6 +4293,30 @@ export const importsData = [
     "product": "Palm oil",
     "valueUSD": 202000000,
     "sourceCountry": "Malaysia",
+    "rank": 3
+  },
+  {
+    "country": "Somalia",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 431000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Somalia",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 293000000,
+    "sourceCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "Somalia",
+    "year": 2024,
+    "product": "Pasta",
+    "valueUSD": 124000000,
+    "sourceCountry": "Turkey",
     "rank": 3
   },
   {
@@ -3312,6 +4392,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "South Africa",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 635000000,
+    "sourceCountry": "Thailand",
+    "rank": 1
+  },
+  {
+    "country": "South Africa",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 546000000,
+    "sourceCountry": "Russia",
+    "rank": 2
+  },
+  {
+    "country": "South Africa",
+    "year": 2024,
+    "product": "Poultry Meat",
+    "valueUSD": 495000000,
+    "sourceCountry": "Indonesia",
+    "rank": 3
+  },
+  {
     "country": "South Sudan",
     "year": 2021,
     "product": "Sorgum",
@@ -3380,6 +4484,30 @@ export const importsData = [
     "year": 2023,
     "product": "Sorghum",
     "valueUSD": 39100000,
+    "sourceCountry": "Uganda",
+    "rank": 3
+  },
+  {
+    "country": "South Sudan",
+    "year": 2024,
+    "product": "Other Edible Preparations",
+    "valueUSD": 48700000,
+    "sourceCountry": "Kenya",
+    "rank": 1
+  },
+  {
+    "country": "South Sudan",
+    "year": 2024,
+    "product": "Cereal Flours",
+    "valueUSD": 48000000,
+    "sourceCountry": "Uganda",
+    "rank": 2
+  },
+  {
+    "country": "South Sudan",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 45800000,
     "sourceCountry": "Uganda",
     "rank": 3
   },
@@ -3456,6 +4584,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Sudan",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 525000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Sudan",
+    "year": 2024,
+    "product": "Wheat Flours",
+    "valueUSD": 252000000,
+    "sourceCountry": "Egypt",
+    "rank": 2
+  },
+  {
+    "country": "Sudan",
+    "year": 2024,
+    "product": "Dried Legumes",
+    "valueUSD": 99400000,
+    "sourceCountry": "Turkey",
+    "rank": 3
+  },
+  {
     "country": "Togo",
     "year": 2021,
     "product": "Palm oil",
@@ -3524,6 +4676,30 @@ export const importsData = [
     "year": 2023,
     "product": "Sugar",
     "valueUSD": 153000000,
+    "sourceCountry": "Brazil",
+    "rank": 3
+  },
+  {
+    "country": "Togo",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 604000000,
+    "sourceCountry": "India",
+    "rank": 1
+  },
+  {
+    "country": "Togo",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 357000000,
+    "sourceCountry": "Malaysia",
+    "rank": 2
+  },
+  {
+    "country": "Togo",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 219000000,
     "sourceCountry": "Brazil",
     "rank": 3
   },
@@ -3600,6 +4776,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Tunisia",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 651000000,
+    "sourceCountry": "Russia",
+    "rank": 1
+  },
+  {
+    "country": "Tunisia",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 200000000,
+    "sourceCountry": "Algeria",
+    "rank": 2
+  },
+  {
+    "country": "Tunisia",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 200000000,
+    "sourceCountry": "Ukraine",
+    "rank": 3
+  },
+  {
     "country": "Uganda",
     "year": 2021,
     "product": "Palm oil",
@@ -3668,6 +4868,30 @@ export const importsData = [
     "year": 2023,
     "product": "Rice",
     "valueUSD": 125000000,
+    "sourceCountry": "Tanzania",
+    "rank": 3
+  },
+  {
+    "country": "Uganda",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 370000000,
+    "sourceCountry": "Malaysia",
+    "rank": 1
+  },
+  {
+    "country": "Uganda",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 216000000,
+    "sourceCountry": "Russia",
+    "rank": 2
+  },
+  {
+    "country": "Uganda",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 207000000,
     "sourceCountry": "Tanzania",
     "rank": 3
   },
@@ -3744,6 +4968,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "United Republic of Tanzania",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 377000000,
+    "sourceCountry": "Russia",
+    "rank": 1
+  },
+  {
+    "country": "United Republic of Tanzania",
+    "year": 2024,
+    "product": "Raw Sugar",
+    "valueUSD": 289000000,
+    "sourceCountry": "India",
+    "rank": 2
+  },
+  {
+    "country": "United Republic of Tanzania",
+    "year": 2024,
+    "product": "Palm Oil",
+    "valueUSD": 264000000,
+    "sourceCountry": "Malaysia",
+    "rank": 3
+  },
+  {
     "country": "Zambia",
     "year": 2021,
     "product": "Fish",
@@ -3816,6 +5064,30 @@ export const importsData = [
     "rank": 3
   },
   {
+    "country": "Zambia",
+    "year": 2024,
+    "product": "Fish",
+    "valueUSD": 162000000,
+    "sourceCountry": "Namibia",
+    "rank": 1
+  },
+  {
+    "country": "Zambia",
+    "year": 2024,
+    "product": "Soybean Oil",
+    "valueUSD": 114000000,
+    "sourceCountry": "South Africa",
+    "rank": 2
+  },
+  {
+    "country": "Zambia",
+    "year": 2024,
+    "product": "Wheat",
+    "valueUSD": 113000000,
+    "sourceCountry": "Australia",
+    "rank": 3
+  },
+  {
     "country": "Zimbabwe",
     "year": 2021,
     "product": "Soybean oil",
@@ -3885,6 +5157,30 @@ export const importsData = [
     "product": "Maize",
     "valueUSD": 147000000,
     "sourceCountry": "South Africa",
+    "rank": 3
+  },
+  {
+    "country": "Zimbabwe",
+    "year": 2024,
+    "product": "Maize",
+    "valueUSD": 560000000,
+    "sourceCountry": "South Africa",
+    "rank": 1
+  },
+  {
+    "country": "Zimbabwe",
+    "year": 2024,
+    "product": "Soybean Oil",
+    "valueUSD": 216000000,
+    "sourceCountry": "Mozambique",
+    "rank": 2
+  },
+  {
+    "country": "Zimbabwe",
+    "year": 2024,
+    "product": "Rice",
+    "valueUSD": 188000000,
+    "sourceCountry": "Thailand",
     "rank": 3
   }
 ];
