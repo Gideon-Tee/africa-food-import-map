@@ -101,7 +101,7 @@ export function AfricaOverview({ year }: AfricaOverviewProps) {
           <Globe2 className="w-4 h-4 text-brand-orange" />
           <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Continent Overview</span>
         </div>
-        <h2 className="text-2xl font-[900] tracking-tight text-gray-900">Africa Food Trade</h2>
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900">Africa Food Trade</h2>
         <p className="text-sm text-gray-400 mt-0.5">{year} · {data.countryCount} countries with data</p>
       </div>
 
@@ -113,7 +113,7 @@ export function AfricaOverview({ year }: AfricaOverviewProps) {
             <div className="absolute top-0 left-0 right-0 h-1 bg-brand-red" />
             <TrendingDown className="w-4 h-4 text-brand-red mb-3" />
             <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-1">Top-3 Imports</p>
-            <p className="text-xl font-[900] text-gray-900 tracking-tight">{formatCurrency(data.totalImports)}</p>
+            <p className="text-xl font-bold text-gray-900 tracking-tight">{formatCurrency(data.totalImports)}</p>
             <p className="text-[9px] text-gray-400 mt-1">Combined inflow</p>
           </div>
 
@@ -122,7 +122,7 @@ export function AfricaOverview({ year }: AfricaOverviewProps) {
             <div className="absolute top-0 left-0 right-0 h-1 bg-brand-yellow" />
             <TrendingUp className="w-4 h-4 text-brand-yellow mb-3" />
             <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-1">Top-3 Exports</p>
-            <p className="text-xl font-[900] text-gray-900 tracking-tight">{formatCurrency(data.totalExports)}</p>
+            <p className="text-xl font-bold text-gray-900 tracking-tight">{formatCurrency(data.totalExports)}</p>
             <p className="text-[9px] text-gray-400 mt-1">Combined outflow</p>
           </div>
 
@@ -131,7 +131,7 @@ export function AfricaOverview({ year }: AfricaOverviewProps) {
             <div className="absolute top-0 left-0 right-0 h-1 bg-brand-orange" />
             <Package className="w-4 h-4 text-brand-orange mb-3" />
             <p className="text-[9px] font-black text-gray-500 uppercase tracking-widest mb-1">Net Balance</p>
-            <p className={`text-xl font-[900] tracking-tight ${balance >= 0 ? 'text-green-400' : 'text-red-400'}`}>
+            <p className={`text-xl font-bold tracking-tight ${balance >= 0 ? 'text-green-400' : 'text-red-400'}`}>
               {balance >= 0 ? '+' : ''}{formatCurrency(balance)}
             </p>
             <p className={`text-[9px] mt-1 font-bold ${balance >= 0 ? 'text-green-600' : 'text-red-600'}`}>

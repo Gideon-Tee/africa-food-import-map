@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Globe2, ChevronRight, LayoutDashboard } from 'lucide-react';
+import { Globe2, ChevronRight, LayoutDashboard, Info, X } from 'lucide-react';
 import { AfricaMap } from './components/AfricaMap';
 import { CountryDashboard } from './components/features/analytics/CountryDashboard';
 import { ComparisonDashboard } from './components/features/analytics/ComparisonDashboard';
@@ -12,6 +12,7 @@ function App() {
   const [selectedYear, setSelectedYear] = useState<number>(YEARS[YEARS.length - 1]);
   const [selectedCountries, setSelectedCountries] = useState<string[]>([]);
   const [isMapCollapsed, setIsMapCollapsed] = useState(false);
+  const [showAboutModal, setShowAboutModal] = useState(false);
 
   const handleCountryClick = (country: string) => {
     setSelectedCountries((prev) => {
@@ -71,10 +72,10 @@ function App() {
               onClick={scrollToLanding}
               title="Back to overview"
             >
-              <h1 className="text-2xl font-[900] leading-tight tracking-tight group-hover:opacity-75 transition-opacity">
+              <h1 className="text-2xl font-bold leading-tight tracking-tight group-hover:opacity-75 transition-opacity">
                 <span className="text-brand-red">Africa Food</span>
                 <br />
-                <span className="text-gray-900">EXIM Map</span>
+                <span className="text-gray-900">Import Map</span>
               </h1>
               <div className="mt-2 h-0.5 w-12 bg-brand-red rounded-full" />
               <p className="text-[9px] uppercase tracking-[0.2em] text-gray-400 font-bold mt-1">↑ Back to overview</p>
@@ -91,7 +92,7 @@ function App() {
                   <button
                     key={year}
                     onClick={() => setSelectedYear(year)}
-                    className={`w-full py-5 px-6 text-xl font-[900] rounded-2xl transition-all duration-300 border-2 relative overflow-hidden
+                    className={`w-full py-5 px-6 text-xl font-bold rounded-2xl transition-all duration-300 border-2 relative overflow-hidden
                       ${selectedYear === year
                         ? 'bg-gray-900 text-white border-gray-900 shadow-xl scale-[1.02]'
                         : 'bg-white text-gray-400 border-gray-100 hover:border-brand-red hover:text-brand-red hover:bg-red-50/30'}`}
@@ -110,12 +111,12 @@ function App() {
         {/* Main Content */}
         <main className="flex-1 flex flex-col overflow-hidden bg-gray-50">
           {/* Top Bar */}
-          <header className="h-20 bg-white border-b border-gray-200 flex items-center justify-between px-8 z-20 shrink-0">
+          <header className="relative h-20 bg-white border-b border-gray-200 flex items-center justify-between px-8 z-20 shrink-0">
             <div className="flex items-center gap-2 lg:hidden">
-              <span className="text-xl font-[900] text-brand-red">Africa Food</span>
-              <span className="text-xl font-[900] text-gray-900">EXIM Map</span>
+              <span className="text-xl font-bold text-brand-red">Africa Food</span>
+              <span className="text-xl font-bold text-gray-900">Import Map</span>
             </div>
-            <div className="hidden md:flex items-center gap-4 lg:gap-6 flex-1 justify-end max-w-3xl">
+            <div className="hidden md:flex items-center gap-4 lg:gap-6 flex-1 justify-center">
               <div className="w-48 md:w-64 lg:w-80">
                 <CountrySearch
                   selectedCountry={null}
@@ -133,6 +134,13 @@ function App() {
               >
                 {isMapCollapsed ? <Globe2 className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
                 <span>{isMapCollapsed ? 'Show Map' : 'Focus Dashboard'}</span>
+              </button>
+              <button
+                onClick={() => setShowAboutModal(true)}
+                className="absolute right-8 flex items-center gap-2 px-4 py-2.5 bg-gray-50 hover:bg-gray-100 border border-gray-200 text-gray-600 rounded-xl font-bold text-xs uppercase tracking-wider transition-colors shrink-0"
+              >
+                <Info className="w-4 h-4" />
+                <span>About this Data</span>
               </button>
             </div>
           </header>
@@ -187,6 +195,46 @@ function App() {
           </p>
         </footer>
       </section>
+
+      {/* About Data Modal */}
+      {showAboutModal && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
+          <div className="absolute inset-0 bg-gray-900/60 backdrop-blur-sm" onClick={() => setShowAboutModal(false)} />
+          <div className="relative bg-white rounded-3xl shadow-2xl max-w-2xl w-full p-8 md:p-10 overflow-hidden animate-fade-in">
+            <button
+              onClick={() => setShowAboutModal(false)}
+              className="absolute top-6 right-6 p-2 text-gray-400 hover:text-gray-900 hover:bg-gray-100 rounded-full transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-10 h-10 rounded-2xl bg-brand-red/10 flex items-center justify-center">
+                <Info className="w-5 h-5 text-brand-red" />
+              </div>
+              <h2 className="text-2xl font-bold text-gray-900 uppercase tracking-tight">About this Data</h2>
+            </div>
+            <div className="space-y-4 text-gray-600 leading-relaxed text-[15px]">
+              <p>
+                This dataset covers food and food-related agricultural imports and exports for African countries, defined as products classified under Harmonized System (HS) Chapters 1–4 and 7–23, encompassing live animals, animal products, vegetable products, edible fats and oils, prepared foodstuffs, and food industry residues.
+              </p>
+              <p>
+                Tobacco (Chapter 24) and non-food agricultural and textile products are excluded. The top three products by value are reported for each country per year.
+              </p>
+              <p>
+                All trade data is sourced from the BACI international trade database compiled by CEPII, derived from UN Comtrade bilateral trade statistics, and accessed via the Observatory of Economic Complexity (OEC).
+              </p>
+            </div>
+            <div className="mt-8 pt-6 border-t border-gray-100 flex justify-end">
+              <button
+                onClick={() => setShowAboutModal(false)}
+                className="px-6 py-3 bg-gray-900 text-white rounded-xl font-bold text-sm hover:bg-gray-800 transition-colors"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

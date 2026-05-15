@@ -42,7 +42,7 @@ export function LandingPage() {
           </div> */}
 
           {/* Headline */}
-          <h1 className="text-4xl lg:text-5xl font-[900] leading-[1.05] tracking-tight mb-6 text-gray-900">
+          <h1 className="text-4xl lg:text-5xl font-bold leading-[1.05] tracking-tight mb-6 text-gray-900">
             Africa's food
             <br />trade{' '}
             <span style={{
@@ -74,7 +74,7 @@ export function LandingPage() {
               <div key={label} className="flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gray-200 bg-white shadow-sm flex-1 justify-center">
                 <span className="text-brand-red">{icon}</span>
                 <div>
-                  <p className="text-gray-900 font-[900] text-base leading-none">{value}</p>
+                  <p className="text-gray-900 font-bold text-base leading-none">{value}</p>
                   <p className="text-gray-400 text-[9px] font-bold uppercase tracking-wider">{label}</p>
                 </div>
               </div>

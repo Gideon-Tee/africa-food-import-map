@@ -65,7 +65,7 @@ export function CountryDashboard({ country, year, onClose }: CountryDashboardPro
                         <div className="flex flex-col h-full justify-between relative z-10">
                             <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Top 3 Imports</span>
                             <div>
-                                <p className="text-3xl font-[900] text-gray-900 mb-1 tracking-tight">{formatCurrency(totalImports)}</p>
+                                <p className="text-3xl font-bold text-gray-900 mb-1 tracking-tight">{formatCurrency(totalImports)}</p>
                                 <div className="flex items-center gap-1.5 text-brand-red text-[10px] font-black uppercase tracking-widest">
                                     <TrendingDown className="w-3.5 h-3.5" />
                                     <span>Outflow</span>
@@ -79,7 +79,7 @@ export function CountryDashboard({ country, year, onClose }: CountryDashboardPro
                         <div className="flex flex-col h-full justify-between relative z-10">
                             <span className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-4">Top 3 Exports</span>
                             <div>
-                                <p className="text-3xl font-[900] text-gray-900 mb-1 tracking-tight">{formatCurrency(totalExports)}</p>
+                                <p className="text-3xl font-bold text-gray-900 mb-1 tracking-tight">{formatCurrency(totalExports)}</p>
                                 <div className="flex items-center gap-1.5 text-brand-yellow text-[10px] font-black uppercase tracking-widest">
                                     <TrendingUp className="w-3.5 h-3.5" />
                                     <span>Inflow</span>

@@ -55,9 +55,6 @@
 
   /* Body font: Gellix → Plus Jakarta Sans fallback */
   --font-gellix: 'Gellix', 'Plus Jakarta Sans', system-ui, sans-serif;
-
-  /* Display/heading font: Nersans One → Bebas Neue fallback */
-  --font-nersans: 'Nersans One', 'Bebas Neue', 'Arial Black', sans-serif;
 }
 
 @layer base {
@@ -65,16 +62,10 @@
     @apply antialiased text-gray-900;
     font-family: var(--font-gellix);
   }
-
-  h1, h2, h3 {
-    font-family: var(--font-nersans);
-    letter-spacing: 0.01em;
-  }
 }
 
 @layer utilities {
   .font-gellix  { font-family: var(--font-gellix);  }
-  .font-nersans { font-family: var(--font-nersans); }
 
   .no-scrollbar::-webkit-scrollbar { display: none; }
   .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
