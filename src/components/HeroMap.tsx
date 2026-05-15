@@ -118,17 +118,12 @@ export function HeroMap() {
         </ZoomableGroup>
       </ComposableMap>
 
-      {/* Legend */}
-      <div className="absolute bottom-6 left-6 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-2xl px-4 py-3 shadow-md">
-        <p className="text-[9px] font-black text-gray-400 uppercase tracking-widest mb-2">Key Commodities</p>
-        <div className="grid grid-cols-2 gap-x-4 gap-y-1">
-          {FOOD_MARKERS.slice(0, 6).map(({ name, emoji }) => (
-            <div key={name} className="flex items-center gap-1.5">
-              <span className="text-xs">{emoji}</span>
-              <span className="text-[10px] font-semibold text-gray-600">{name}</span>
-            </div>
-          ))}
-        </div>
+      {/* Scroll hint replacing Key Commodities */}
+      <div className="absolute bottom-10 left-10 flex flex-col items-center gap-3 opacity-80 animate-bounce">
+        <div className="w-px h-12 bg-gradient-to-b from-transparent via-brand-red to-brand-orange" />
+        <span className="text-[10px] text-gray-600 font-black uppercase tracking-[0.3em] flex items-center gap-2">
+          Scroll down to explore
+        </span>
       </div>
 
       <style>{`

@@ -34,12 +34,12 @@ export function LandingPage() {
         {/* Main content — centred, padded away from logo */}
         <div className="flex flex-col justify-center flex-1 px-12 lg:px-16 pt-20 pb-10 relative z-10">
           {/* Eyebrow */}
-          <div className="flex items-center gap-2 mb-5">
+          {/* <div className="flex items-center gap-2 mb-5">
             <div className="w-1.5 h-1.5 rounded-full bg-brand-red animate-pulse" />
             <span className="text-[10px] font-black text-gray-400 uppercase tracking-[0.25em]">
               Africa Food Trade Intelligence
             </span>
-          </div>
+          </div> */}
 
           {/* Headline */}
           <h1 className="text-4xl lg:text-5xl font-[900] leading-[1.05] tracking-tight mb-6 text-gray-900">
@@ -49,7 +49,7 @@ export function LandingPage() {
               background: 'linear-gradient(90deg,rgb(183,43,24),rgb(237,104,67),rgb(250,187,37))',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text',
             }}>
-              tells a story.
+              tells a story
             </span>
           </h1>
 
@@ -60,7 +60,7 @@ export function LandingPage() {
               <span className="text-brand-orange font-bold">opportunity</span>, and{' '}
               <span className="text-gray-900 font-bold">resilience</span>.
               This platform maps the top 3 imported and exported food products for all 54 African
-              nations — ranked by USD trade value — alongside the source and destination countries
+              nations, ranked by USD trade value, alongside the source and destination countries
               driving each flow.
             </p>
             <p className="text-gray-400 text-xs mt-3">
@@ -93,11 +93,7 @@ export function LandingPage() {
               style={{ background: 'linear-gradient(135deg,rgb(237,104,67) 0%,rgb(250,187,37) 100%)' }} />
           </button>
 
-          {/* Scroll hint */}
-          <div className="mt-8 flex items-center gap-2 opacity-40">
-            <div className="w-px h-8 bg-gradient-to-b from-gray-400 to-transparent" />
-            <span className="text-[9px] text-gray-400 font-bold uppercase tracking-[0.2em]">Scroll down to explore</span>
-          </div>
+
         </div>
       </div>
 
@@ -105,10 +101,10 @@ export function LandingPage() {
       <div className="hidden md:flex flex-1 relative overflow-hidden">
         <div className="absolute left-0 top-0 bottom-0 w-16 z-10 pointer-events-none"
           style={{ background: 'linear-gradient(to right,#f7f4f0,transparent)' }} />
-        <div className="absolute top-6 right-6 z-20 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-3 py-1.5 shadow-sm flex items-center gap-2">
-          <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
-          <span className="text-[9px] font-black text-gray-500 uppercase tracking-widest">Agricultural Commodities</span>
-        </div>
+        {/* <div className="absolute top-6 right-6 z-20 bg-white/80 backdrop-blur-sm border border-gray-200 rounded-full px-3 py-1.5 shadow-sm flex items-center gap-2"> */}
+        {/* <div className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" /> */}
+        {/* <span className="text-[9px] font-black text-gray-500 uppercase tracking-widest">Agricultural Commodities</span> */}
+        {/* </div> */}
         <HeroMap />
       </div>
     </div>
