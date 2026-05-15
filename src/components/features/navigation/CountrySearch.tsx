@@ -39,7 +39,7 @@ export function CountrySearch({ onSelect, selectedCountry }: CountrySearchProps)
                 <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
                 <input
                     type="text"
-                    placeholder="Search markets..."
+                    placeholder="Search countries..."
                     value={searchTerm}
                     onChange={(e) => {
                         setSearchTerm(e.target.value);

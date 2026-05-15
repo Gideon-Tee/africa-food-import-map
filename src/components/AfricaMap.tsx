@@ -1,5 +1,7 @@
 import { useState, useMemo, useRef, useCallback } from 'react';
-import { ComposableMap, Geographies, Geography, ZoomableGroup } from 'react-simple-maps';
+import { ComposableMap, Geographies, Geography, ZoomableGroup, Marker } from 'react-simple-maps';
+// @ts-expect-error d3-geo might not have types installed
+import { geoCentroid } from 'd3-geo';
 import { Plus, Minus, RotateCcw } from 'lucide-react';
 import {
   AFRICAN_COUNTRIES,
@@ -151,6 +153,21 @@ interface AfricaMapProps {
   onCountryClick: (country: string) => void;
 }
 
+const AFRICAN_ISO3: Record<string, string> = {
+  'Algeria': 'DZA', 'Angola': 'AGO', 'Benin': 'BEN', 'Botswana': 'BWA', 'Burkina Faso': 'BFA',
+  'Burundi': 'BDI', 'Cabo Verde': 'CPV', 'Cameroon': 'CMR', 'Central African Republic': 'CAF',
+  'Chad': 'TCD', 'Comoros': 'COM', 'Congo': 'COG', 'Democratic Republic of the Congo': 'COD',
+  "Côte d'Ivoire": 'CIV', 'Djibouti': 'DJI', 'Egypt': 'EGY', 'Equatorial Guinea': 'GNQ',
+  'Eritrea': 'ERI', 'Eswatini': 'SWZ', 'Ethiopia': 'ETH', 'Gabon': 'GAB', 'Gambia': 'GMB',
+  'Ghana': 'GHA', 'Guinea': 'GIN', 'Guinea-Bissau': 'GNB', 'Kenya': 'KEN', 'Lesotho': 'LSO',
+  'Liberia': 'LBR', 'Libya': 'LBY', 'Madagascar': 'MDG', 'Malawi': 'MWI', 'Mali': 'MLI',
+  'Mauritania': 'MRT', 'Mauritius': 'MUS', 'Morocco': 'MAR', 'Mozambique': 'MOZ',
+  'Namibia': 'NAM', 'Niger': 'NER', 'Nigeria': 'NGA', 'Rwanda': 'RWA', 'Sao Tome and Principe': 'STP',
+  'Senegal': 'SEN', 'Seychelles': 'SYC', 'Sierra Leone': 'SLE', 'Somalia': 'SOM',
+  'South Africa': 'ZAF', 'South Sudan': 'SSD', 'Sudan': 'SDN', 'Togo': 'TGO', 'Tunisia': 'TUN',
+  'Uganda': 'UGA', 'United Republic of Tanzania': 'TZA', 'Zambia': 'ZMB', 'Zimbabwe': 'ZWE'
+};
+
 export function AfricaMap({ selectedYear, selectedCountries, onCountryClick }: AfricaMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [hoveredCountry, setHoveredCountry] = useState<string | null>(null);
@@ -242,25 +259,44 @@ export function AfricaMap({ selectedYear, selectedCountries, onCountryClick }: A
                 const dimmed = selectedCountries.length > 0 && !isSelected;
 
                 return (
-                  <Geography
-                    key={String(geo.id)}
-                    geography={geo}
-                    fill={getCountryFill(name, isSelected, isHovered)}
-                    stroke={isSelected ? '#7f1d1d' : '#ffffff'}
-                    strokeWidth={isSelected ? 1.5 / zoom : 0.6 / zoom}
-                    style={{
-                      default: {
-                        outline: 'none',
-                        opacity: dimmed ? 0.35 : 1,
-                        transition: 'opacity 0.3s, fill 0.2s',
-                      },
-                      hover: { outline: 'none', cursor: 'pointer' },
-                      pressed: { outline: 'none' },
-                    }}
-                    onClick={() => onCountryClick(name)}
-                    onMouseEnter={() => setHoveredCountry(name)}
-                    onMouseLeave={() => setHoveredCountry(null)}
-                  />
+                  <g key={String(geo.id)}>
+                    <Geography
+                      geography={geo}
+                      fill={getCountryFill(name, isSelected, isHovered)}
+                      stroke={isSelected ? '#7f1d1d' : '#ffffff'}
+                      strokeWidth={isSelected ? 1.5 / zoom : 0.6 / zoom}
+                      style={{
+                        default: {
+                          outline: 'none',
+                          opacity: dimmed ? 0.35 : 1,
+                          transition: 'opacity 0.3s, fill 0.2s',
+                        },
+                        hover: { outline: 'none', cursor: 'pointer' },
+                        pressed: { outline: 'none' },
+                      }}
+                      onClick={() => onCountryClick(name)}
+                      onMouseEnter={() => setHoveredCountry(name)}
+                      onMouseLeave={() => setHoveredCountry(null)}
+                    />
+                    {AFRICAN_ISO3[name] && (
+                      <Marker coordinates={geoCentroid(geo) as [number, number]} style={{ pointerEvents: 'none' }}>
+                        <text
+                          textAnchor="middle"
+                          y={2.5}
+                          className="font-bold tracking-widest pointer-events-none select-none"
+                          style={{
+                            fontSize: `${Math.max(2.5, 7.5 / zoom)}px`,
+                            fill: isSelected ? '#ffffff' : '#374151',
+                            opacity: dimmed ? 0.2 : 0.85,
+                            transition: 'opacity 0.3s, fill 0.2s, font-size 0.2s',
+                            textShadow: isSelected ? 'none' : '0px 0px 2px rgba(255,255,255,0.9)'
+                          }}
+                        >
+                          {AFRICAN_ISO3[name]}
+                        </text>
+                      </Marker>
+                    )}
+                  </g>
                 );
               })
             }
