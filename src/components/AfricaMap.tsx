@@ -10,7 +10,7 @@ import {
 
 // Natural Earth GeoJSON with name properties — more reliable than ISO numeric codes
 const GEO_URL =
-  'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
+  'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json';
 
 // ISO 3166-1 numeric → our exact country name (from AFRICAN_COUNTRIES)
 const ISO_TO_COUNTRY: Record<string, string> = {

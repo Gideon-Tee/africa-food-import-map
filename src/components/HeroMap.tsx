@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ComposableMap, Geographies, Geography, Marker, ZoomableGroup } from 'react-simple-maps';
 
-const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json';
+const GEO_URL = 'https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json';
 
 const AFRICAN_ISO_SET = new Set([
   '12','24','204','72','854','108','132','120','140','148','174','178','384','180',
